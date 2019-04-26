@@ -262,6 +262,12 @@ table.table-fees td, table.table-fees th {
     margin-top: 160px;
     margin-bottom: 80px !important;
 }
+.use-cases-main {
+    font-weight: 400 !important;
+}
+.use-cases-h3-main {
+    font-weight: 400 !important;
+}
 .wp-style {
     font-size: 50px;
 }
@@ -729,13 +735,14 @@ table.table-fees td, table.table-fees th {
         width: 60% !important;
     }
     .main-block-btn {
-        width: 175px;
+        width: 200px;
         height: 45px;
     }
     /*use-cases*/
     .use-cases-main {
         font-size: 37px !important;
         margin-top: 50px;
+
     }
     .use-img {
         width: 60%;
