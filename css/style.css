@@ -728,6 +728,10 @@ table.table-fees td, table.table-fees th {
         font-size: 37px !important;
         margin-top: 50px;
     }
+    .use-img {
+        width: 60%;
+        height: auto;
+    }
     .use-cases-text {
         font-size: 16px !important;
     }
@@ -768,9 +772,7 @@ table.table-fees td, table.table-fees th {
 }
 @media only screen and (max-width: 325px) {
     /*use-cases*/
-    .use-img {
-        height: 200px;
-    }
+
     /*end use-cases*/
 }
 
