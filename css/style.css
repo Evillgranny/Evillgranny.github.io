@@ -714,7 +714,7 @@ table.table-fees td, table.table-fees th {
 @media only screen and (max-width: 544px) {
     .main-header-f {
         font-size: 25px;
-        margin-top: 70px;
+        margin-top: 50px;
     }
     .home-first-img {
         width: 60% !important;
