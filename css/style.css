@@ -164,7 +164,13 @@ label {
 .navbar .dropdown-menu a:hover {
     background-color: rgb(178, 207, 216);
 }
-
+#headingOne  .btn:hover,
+#headingTwo .btn:hover,
+#headingFour .btn:hover,
+#headingThree .btn:hover,
+#headingFive .btn:hover {
+    background: none !important;
+}
 .before-triangle {
     width: 130px;
     height: 30px;
@@ -230,8 +236,8 @@ table.table-fees td, table.table-fees th {
 .white-paper-lists {
     list-style: none;
     margin-left: 45px;
-
 }
+
 .white-paper-lists a{
     color: #000000;
 }
@@ -632,6 +638,9 @@ table.table-fees td, table.table-fees th {
         margin-bottom: 50px;
     }
     /*start white paper*/
+    .team-main {
+        margin-top: 60px;
+    }
     .wp-center-card {
         border: 1px solid rgb(180, 180, 180);
     }
@@ -707,7 +716,7 @@ table.table-fees td, table.table-fees th {
     /*end use cases*/
     /*start team */
     .team-main {
-        font-size: 25px;
+        font-size: 35px;
     }
     /*end team*/
 }
@@ -732,6 +741,9 @@ table.table-fees td, table.table-fees th {
         width: 60%;
         height: auto;
     }
+    .team-img {
+        width: 80%;
+    }
     .use-cases-text {
         font-size: 16px !important;
     }
@@ -739,6 +751,9 @@ table.table-fees td, table.table-fees th {
         font-size: 20px !important;
     }
     /*end use-cases*/
+    .team-main {
+        font-size: 25px;
+    }
     /*white paper*/
     h1.wp-style {
         font-size: 37px;
