@@ -726,6 +726,7 @@ table.table-fees td, table.table-fees th {
     /*use-cases*/
     .use-cases-main {
         font-size: 37px !important;
+        margin-top: 50px;
     }
     .use-cases-text {
         font-size: 16px !important;
