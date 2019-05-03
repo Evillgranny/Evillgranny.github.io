@@ -483,15 +483,16 @@ table.table-fees td, table.table-fees th {
 .user-balance-text-under {
     color: rgb(222,222,227);
     font-size: 11px;
+    margin-bottom: 0 !important;
 }
 .left-account-menu {
     background-color: rgb(41,47,91);
 }
 .money-way-menu-list {
     list-style: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
 }
 .money-way-menu-list:hover {
     background-color: rgb(18,23,71) !important;
@@ -590,7 +591,7 @@ table.table-fees td, table.table-fees th {
 .bank-deposit-btn {
     font-size: 15px;
     text-transform: uppercase;
-    padding: 15px 85px 15px 85px;
+    padding: 7px 85px 7px 85px;
     margin: 0 !important;
     background: rgb(9,152,194);
     border-radius: 5px;
@@ -645,6 +646,52 @@ table.table-fees td, table.table-fees th {
 }
 .mobile-crypto {
     display: none;
+}
+.cabinet-content {
+    min-height: 80vh;
+    max-height: 85vh;
+
+}
+.right-account-menu {
+    overflow: auto;
+}
+.right-account-menu::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+.right-account-menu::-webkit-scrollbar-thumb {
+    margin-right: 3px;
+    border-radius: 10px;
+    background-color: #a0a0a0;
+}
+#InternationalBankTransferBtn,
+#sepaTransfer {
+    display: none;
+}
+#InternationalBankTransferBtn ~ span,
+#sepaTransfer ~ span{
+    cursor: pointer;
+}
+
+#InternationalBankTransferBtn:checked ~ span,
+#sepaTransfer:checked ~ span {
+    font-weight: 400;
+    border-bottom: 2px solid rgb(2,149,192);
+}
+#sepaTransferBlock {
+    display: none;
+}
+#mobileSepaTransferBlock {
+    display: none;
+}
+#mobileInternationalBankTransferBtn,
+#MobileSepaTransfer {
+    display: none;
+}
+#mobileInternationalBankTransferBtn:checked ~ span,
+#MobileSepaTransfer:checked ~ span {
+    font-weight: 400;
+    border-bottom: 2px solid rgb(2,149,192);
 }
 @media only screen and (max-width: 1200px) {
     .min-cart-height {
