@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>OERO</title>
+    <title>Deposit</title>
     <!-- Font Awesome -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
@@ -49,7 +49,13 @@
                     </li>
                     <div class="header-hr d-none d-md-block"></div>
                     <!-- Dropdown -->
-
+                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none text-center mt-4">
+                        <img src="img/icons/account-people.png" class="account-menu-img mb-2 mx-auto">
+                        <h2 class="account-menu-user-name mb-2">JANE DOE</h2>
+                        <h2 class="account-menu-user-balance mb-0">2560</h2>
+                        <p class="user-balance-text mb-0">Your balance OERO</p>
+                        <p class="user-balance-text-under">( 1  OERO  =  1 EUR )</p>
+                    </li>
                     <li class="nav-item dropdown d-none d-md-block mr-xs-0 mr-lg-5">
                         <a class="nav-link dropdown-toggle navigation-link drop-header" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                            aria-expanded="false">ABOUT US</a>
@@ -76,29 +82,20 @@
                     </li>
 
                     <li class="nav-item dropdown d-md-none mr-xs-0 mr-lg-5">
-                        <a class="nav-link dropdown-toggle navigation-link drop-header" data-toggle="dropdown" aria-haspopup="true"
+                        <a href="personal-account.html" class="nav-link dropdown-toggle navigation-link drop-header" data-toggle="dropdown" aria-haspopup="true"
                            aria-expanded="false">DEPOSIT</a>
                         <div class="dropdown-menu dropdown-primary header-dropdown-items" aria-labelledby="navbarDropdownMenuLink">
                             <div class="before-triangle"></div>
                             <div class="dropdown-triangle"></div>
-                            <a class="dropdown-item first-dd-item" href="#">BANK TRANSACTION</a>
-                            <a class="dropdown-item" href="#">CRYPTOCURRENCY</a>
+                            <a class="dropdown-item first-dd-item" href="#" id="mobileBankTransferBtn">BANK TRANSACTION</a>
+                            <a class="dropdown-item" href="#" id="mobileBtnDepositCrypto">CRYPTOCURRENCY</a>
                             <a class="dropdown-item" href="#">PAYMENT SYSTEM</a>
                             <a class="dropdown-item" href="#">MONEYTRANSFER</a>
                         </div>
                     </li>
                     <div class="header-hr d-md-none d-block"></div>
-                    <li class="nav-item dropdown d-md-none mr-xs-0 mr-lg-5">
-                        <a class="nav-link dropdown-toggle navigation-link drop-header" data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false">WITHDRAW</a>
-                        <div class="dropdown-menu dropdown-primary header-dropdown-items" aria-labelledby="navbarDropdownMenuLink">
-                            <div class="before-triangle"></div>
-                            <div class="dropdown-triangle"></div>
-                            <a class="dropdown-item first-dd-item" href="#">BANK TRANSACTION</a>
-                            <a class="dropdown-item" href="#">CRYPTOCURRENCY</a>
-                            <a class="dropdown-item" href="#">PAYMENT SYSTEM</a>
-                            <a class="dropdown-item" href="#">MONEYTRANSFER</a>
-                        </div>
+                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
+                        <a class="nav-link navigation-link drop-header" href="withdraw.html">WITHDRAW<span class="sr-only">(current)</span></a>
                     </li>
                     <div class="header-hr d-md-none d-block"></div>
                     <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
@@ -139,8 +136,8 @@
                                </li>
                                <li class="left-account-menu-list mt-5">
                                    <ul class="money-way-menu">
-                                       <li class="money-way-menu-list"><label><input type="radio" name="left-menu-radio" class="d-none" id="deposit"><p class="money-way-menu-list-link">DEPOSIT</p></label></li>
-                                       <li class="money-way-menu-list"><label><input type="radio" name="left-menu-radio" class="d-none" id="withdraw"><p class="money-way-menu-list-link">WITHDRAW</p></label></li>
+                                       <li class="money-way-menu-list"><label><input type="radio" name="left-menu-radio" class="d-none"><a href="personal-account.html" class="money-way-menu-list-link">DEPOSIT</a></label></li>
+                                       <li class="money-way-menu-list"><label><input type="radio" name="left-menu-radio" class="d-none" id="withdraw"><a href="withdraw.html" class="money-way-menu-list-link">WITHDRAW</a></label></li>
                                        <li class="money-way-menu-list"><label><input type="radio" name="left-menu-radio" class="d-none"><p class="money-way-menu-list-link">HISTORY</p></label></li>
                                        <li class="money-way-menu-list"><label><input type="radio" name="left-menu-radio" class="d-none"><p class="money-way-menu-list-link">SETTINGS</p></label></li>
                                        <li class="money-way-menu-list mt-5"><label><input type="radio" name="left-menu-radio" class="d-none"><p class="money-way-menu-list-link">SUPPORT</p></label></li>
@@ -148,107 +145,108 @@
                                </li>
                            </ul>
                        </div>
-                       <!--                           DEPOSIT-->
-                       <div class="right-account-menu col-10 mt-2 px-0" id="depositBlock">
-                            <div class="choice">
-                                <ul class="choice-navigation d-flex mb-0 py-3 justify-content-around">
-                                    <label><input type="radio" name="deposit-method" id="depositBankTransaction"><li class="choice-navigation-variant bank-transfer-variant" >Bank Transaction</li></label>
-                                    <label><input type="radio" name="deposit-method" id="depositCrypto"><li class="choice-navigation-variant crypto-variant">Cryptocurrency</li></label>
-                                    <label><input type="radio" name="deposit-method"><li class="choice-navigation-variant">Payment System </li></label>
-                                    <label><input type="radio" name="deposit-method"><li class="choice-navigation-variant">Moneytransfer</li></label>
-                                </ul>
-                            </div>
 
-
-
-
-                           <div class="cryptocurrency" id="cryptocurrency">
-                               <div class="send-crypto-inputs d-flex mt-4">
-                                   <div class="cryptocustom-select custom-select-sm bank-deposit-selcectcurrency-left col-5 col-lg-3 pr-0">
-                                       <div class="cryptocurrency-block">
-                                           <div class="crypto-send-block ">
-                                               <input type="text" class="send-input"><p class="current-crypto">BTC</p>
-                                               <ul class="send-cryptocurency-list mb-0">
-                                                   <li class="send-crypto-list">BTC</li>
-                                                   <li class="send-crypto-list">XRP</li>
-                                                   <li class="send-crypto-list">ETH</li>
-                                                   <li class="send-crypto-list">ETC</li>
-                                                   <li class="send-crypto-list ">OERO</li>
-                                               </ul>
-                                           </div>
-                                       </div>
-                                   </div>
-                                   <div class="center-arrow col-2 d-flex justify-content-center d-flex">
-                                       <img src="img/arrow-personal-acc.png" alt="" class="personal-arr align-self-center">
-                                   </div>
-                                   <div class="cryptocurrency-right col-5 col-lg-3 pl-0">
-                                       <input type="text" class="send-input to-oero"><p class="current-crypto current-crypto-to-oero">OERO</p>
-                                   </div>
-                               </div>
-
-                               <div class="back-address-block col-12 col-lg-8 mt-4">
-                                   <p class="back-address-block-text">Address</p>
-                                   <input type="text" class="back-crypto-address">
-                               </div>
-
-                               <div class="qr-code-block col-12 mt-5">
-                                   <p class="qr-code-text">Use this QR code to quickly receive payments </p>
-                                   <img src="img/QRcode.png" alt="">
-                               </div>
-
-                           </div>
-
-
-
-                           <div class="bank-transaction-block" id="bankTransaction">
-                               <p class="bank-transction-deposit-main mt-2 col-12">We need you to provide some basic information, so we can process your deposit as soon as possible.</p>
-                                <div class="bank-deposit-name-block  d-flex">
-                                    <div class="bankDeposit-left-block col-6 col-lg-4">
-                                        <p class="bank-deposit-name-text">First name:</p>
-                                        <input type="text" class="bank-deposit-name">
-                                        <p class="bank-deposit-name-text  mt-4">Account balance</p>
-                                        <select class="custom-select custom-select-sm bank-deposit-selcect">
-                                            <option selected>Euro</option>
-                                            <option value="1">Dollar</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="bankDeposit-right-block col-6 col-lg-4">
-                                        <p class="bank-deposit-name-text">Last name:</p>
-                                        <input type="text" class="bank-deposit-name">
-                                        <p class="bank-deposit-amount-text mt-4">Amount</p>
-                                        <input type="text" class="bank-deposit-amount">
-                                    </div>
-                                </div>
-                               <div class="bank-deposit-textarea-block col-12 col-lg-8 mt-4">
-                                   <p class="bank-deposit-name-text">Comment(optional)</p>
-                                   <textarea class="bank-deposit-textarea"></textarea>
-                               </div>
-                               <div class="bank-deposit-btn-block col-12 mt-4">
-                                   <button class="bank-deposit-btn btn">DEPOSIT</button>
-                               </div>
-                           </div>
-                       </div>
-                       <!--                        END DEPOSIT-->
-
-                       <!--                         START WITHDRAW -->
-                       <div class="right-account-menu withdraw-block col-10 mt-2" id="withdrawBlock">
-                           <div class="choice">
-                               <ul class="choice-navigation choice-withdraw-navigation d-flex mb-0 py-3 justify-content-around">
-                                   <label><input type="radio" name="deposit-method" id="withdrawBankTransaction"><li class="choice-navigation-variant bank-transfer-variant withdraw-bank-variant" >Bank Transaction</li></label>
-                                   <label><input type="radio" name="deposit-method" id="withdrawCrypto"><li class="choice-navigation-variant crypto-variant withdraw-crypto-variant">Cryptocurrency</li></label>
-                                   <label><input type="radio" name="deposit-method"><li class="choice-navigation-variant">Payment System </li></label>
-                                   <label><input type="radio" name="deposit-method"><li class="choice-navigation-variant">Moneytransfer</li></label>
+                       <div class="right-account-menu col-10 mt-2 px-0">
+                           <div class="personal-account-navigation py-3">
+                               <ul class="personal-account-navigation-lists w-100 d-flex justify-content-around mb-0">
+                                   <li class="personal-account-navigation-list align-self-center">
+                                       <label><input type="radio" name="deposit-navigation" id="btnDepositBank" checked><span>Bank Transaction</span></label>
+                                   </li>
+                                   <li class="personal-account-navigation-list">
+                                       <label><input type="radio" name="deposit-navigation" id="btnDepositCrypto"><span>Cryptocurrency</span></label>
+                                   </li>
+                                   <li class="personal-account-navigation-list">
+                                       <label><input type="radio" name="deposit-navigation"><span>Payment System</span></label>
+                                   </li>
+                                   <li class="personal-account-navigation-list">
+                                       <label><input type="radio" name="deposit-navigation"><span> Moneytransfer</span></label>
+                                   </li>
                                </ul>
                            </div>
 
-                           <div class="withdraw-bank-transaction-block" id="withdrawBankBlock">
-                                1
+                           <div class="right-account-menu-hr"></div>
+
+                           <div class="bank-deposit-content ml-lg-5" id="bankDepositBlock">
+                                <h6 class="bank-deposit-main mt-3 col-12 pl-lg-0">We need you to provide some basic information, so we can process your deposit as soon as possible.</h6>
+                                
+                               <div class="bank-deposit-inputs d-flex mt-4">
+                                   <div class="left-deposit-inputs col-col-6 col-lg-5 pl-lg-0">
+                                       <p class="bank-deposit-descripton">First name:</p>
+                                       <input type="text" class="bank-deposit-input w-100">
+
+                                       <p class="bank-deposit-descripton mt-4">Account balance</p>
+                                       <select class="bank-deposit-select w-100">
+                                           <option value="1">Euro</option>
+                                           <option value="1">Dollar</option>
+                                       </select>
+                                   </div>
+
+                                   <div class="right-deposit-inputs col-6 col-lg-5">
+                                       <p class="bank-deposit-descripton">Last name:</p>
+                                       <input type="text" class="bank-deposit-input w-100">
+
+                                       <p class="bank-deposit-descripton mt-4">Amount</p>
+                                       <input type="text" class="bank-deposit-input w-100">
+                                       <p class="bank-deposit-descripton-under">will be  charged at *** OERO</p>
+                                   </div>
+                               </div>
+
+                               <div class="bank-deposit-textarea-block col-12 col-lg-10 pl-lg-0 mb-4 ">
+                                   <p class="bank-deposit-descripton-under mb-0">Comment(optional)</p>
+                                   <textarea class="bank-deposit-textarea w-100"></textarea>
+                               </div>
+
+                               <div class="button-deposit-block col-12 pl-lg-0">
+                                   <button class="bank-deposit-btn btn">
+                                       DEPOSIT
+                                   </button>
+                               </div>
+
                            </div>
 
-                           <div class="withdraw-crypto-block" id="withdrawCryptoBlock">
-                                2
-                           </div>
+                           <section class="cryotocurecy-deposit-block py-5" id="cryptoDepositBlock">
+                               <div class="crypto-inputs-content d-flex flex-column ml-lg-5">
+                                   <div class="crypto-dep-inputs d-flex mt-5">
+                                       <div class="crypto-inputs-left col-4">
+                                           <div class="crypto-deposit-content">
+                                               <input type="text" class="w-100">
+                                               <select class="first-crypto-select-dep">
+                                                   <option value="btc">BTC</option>
+                                                   <option value="ETH">ETH</option>
+                                                   <option value="ETC">ETC</option>
+                                                   <option value="OERO">OERO</option>
+                                                   <option value="USDT">USDT</option>
+                                               </select>
+                                           </div>
+                                       </div>
+                                       <div class="crypto-inputs-center align-self-center col-2">
+                                           <img src="img/arrow-personal-acc.png" alt="" class="mx-auto">
+                                       </div>
+                                       <div class="crypto-inputs-right col-4">
+                                           <div class="crypto-deposit-content">
+                                               <input type="text" class="w-100">
+                                               <select class="first-crypto-select-dep">
+                                                   <option value="btc">OERO</option>
+                                               </select>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                                   <div class="input-block col-10 mt-5">
+                                       <p class="bank-deposit-descripton mb-0">
+                                           Address
+                                       </p>
+                                       <input type="text" class="w-100 input-adress-crypto-dep">
+                                   </div>
+
+                                   <div class="qr-code">
+                                       <p class="bank-deposit-descripton mb-0 col-10 mt-5">
+                                           Use this QR code to quickly receive payments
+                                       </p>
+                                       <img src="img/QRcode.png" alt="">
+                                   </div>
+                               </div>
+                           </section>
                        </div>
                    </div>
                 </div>
@@ -256,31 +254,58 @@
         </div>
     </div>
 </header>
-<!--Main Navigation-->
-<section class="mobile d-md-none">
-    <div class="mobile-bank-transaction container">
-        <h2 class="bank-transaction-main">Bank Transaction</h2>
-        <p class="bank-transaction-text">We need you to provide some basic information,
+
+<section class="mobile-deposit mt-5 py-5 d-md-none" id="mobileDepositBlock">
+    <div class="container">
+        <h6 class="mobile-deposit-main">Bank Transaction</h6>
+        <p class="mobile-deposit-text">We need you to provide some basic information,
             so we can process your deposit as soon as
-            possible.
-        </p>
-        <input type="text" class="bank-deposit-name-mobile mt-5" placeholder="First name">
-        <input type="text" class="bank-deposit-name-mobile mt-5" placeholder="Last name">
-        <select class="custom-select custom-select-sm bank-deposit-selcect mt-5">
-            <option selected>Euro</option>
+            possible.</p>
+        <input type="text" class="bank-deposit-input w-100 my-3" placeholder="First name">
+        <input type="text" class="bank-deposit-input w-100 my-3" placeholder="Last name">
+        <select class="bank-deposit-select w-100 my-3">
+            <option value="1">Euro</option>
             <option value="1">Dollar</option>
         </select>
-        <input type="text" class="bank-deposit-name-mobile mt-5" placeholder="Amount">
-        <p class="bank-deposit-name-mobile-text">Will be  charged at *** OERO</p>
-        <textarea class="bank-deposit-textarea mt-5" placeholder="Comment optional"></textarea>
-        <div class="button-mobile mt-5">
-            <button class="button-mobile btn">DEPOSIT</button>
-        </div>
+        <input type="text" class="bank-deposit-input w-100 mt-3" placeholder="Amount">
+        <p class="bank-deposit-descripton-under">will be  charged at *** OERO</p>
+        <textarea class="bank-deposit-textarea w-100" placeholder="Comment(optional)"></textarea>
+    </div>
+    <div class="button-deposit-block col-12 pl-lg-0 text-center mt-3">
+        <button class="bank-deposit-btn btn">
+            DEPOSIT
+        </button>
     </div>
 </section>
 
-
-
+<section class="mobile-crypto py-5 mt-5 d-md-none" id="mobileCryptoBlock">
+    <div class="container">
+        <h6 class="mobile-deposit-main mb-5">Cryptocurrency</h6>
+        <div class="crypto-deposit-content position-relative">
+            <input type="text" class="w-100">
+            <select class="first-crypto-select-dep">
+                <option value="btc">BTC</option>
+                <option value="ETH">ETH</option>
+                <option value="ETC">ETC</option>
+                <option value="OERO">OERO</option>
+                <option value="USDT">USDT</option>
+            </select>
+        </div>
+        <div class="crypto-deposit-content mb-5 mt-5 position-relative">
+            <input type="text" class="w-100">
+            <select class="first-crypto-select-dep">
+                <option value="btc">OERO</option>
+            </select>
+        </div>
+        <input type="text" class="w-100 input-adress-crypto-dep" placeholder="address">
+        <div class="qr-code">
+            <p class="bank-deposit-descripton mb-0 col-10 mt-5">
+                Use this QR code to quickly receive payments
+            </p>
+            <img src="img/QRcode.png" alt="">
+        </div>
+    </div>
+</section>
 
 
 <!-- Footer -->
