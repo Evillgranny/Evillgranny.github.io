@@ -55,6 +55,10 @@ $('#mobileBtnDepositCrypto').click(function () {
     $('#mobileCryptoBlock').show();
     $('#mobileDepositBlock').hide();
 });
+//по умолчанию
+$('#InternationalBankTransferBtn').prop('checked', true);
+$('#mobileInternationalBankTransferBtn').prop('checked', true);
+
 //выбор iban и sepa mobile
 $(mobileBankWithdrawChoise).change(function () {
     if ($('#mobileInternationalBankTransferBtn').is(':checked')) {

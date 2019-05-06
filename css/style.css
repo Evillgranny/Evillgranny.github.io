@@ -648,9 +648,7 @@ table.table-fees td, table.table-fees th {
     display: none;
 }
 .cabinet-content {
-    min-height: 80vh;
-    max-height: 85vh;
-
+    height: 80vh;
 }
 .right-account-menu {
     overflow: auto;
