@@ -691,6 +691,105 @@ table.table-fees td, table.table-fees th {
     font-weight: 400;
     border-bottom: 2px solid rgb(2,149,192);
 }
+/*history*/
+.history-nav {
+    display: grid;
+    grid-template-columns: 20% 25% 30% 25%;
+}
+.history-list {
+    list-style: none;
+    width: 100% !important;
+    display: grid;
+    grid-template-columns: 20% 25% 30% 25%;
+}
+.to-balance .history-date::before {
+    content: "";
+    background: url('../img/icons/history-arrow-up.png') no-repeat;
+    -webkit-background-size: 12px 14px;
+    background-size: 12px 14px;
+    width: 12px;
+    height: 14px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.history-entered::after {
+    content: '';
+    background: url("../img/icons/oero-to-cabinent.png");
+    -webkit-background-size: 19px 19px;
+    background-size: 19px 19px;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+}
+.history-euro::after {
+    content: '';
+    background: url("../img/icons/euro.png");
+    -webkit-background-size: 19px 19px;
+    background-size: 19px 19px;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+}
+.balance-withdrawal .history-date::before {
+    content: "";
+    background: url('../img/icons/history-arrow-down.png') no-repeat;
+    -webkit-background-size: 12px 14px;
+    background-size: 12px 14px;
+    width: 12px;
+    height: 14px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.history-oero::after {
+    content: '';
+    background: url("../img/icons/oero-to-cabinent.png");
+    -webkit-background-size: 19px 19px;
+    background-size: 19px 19px;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+}
+.mobile-history-list {
+    list-style: none;
+    position: relative;
+    border-bottom: 1px solid rgba(2, 149, 192, 0.5);
+}
+.mobile-history-list .mobile-history-dep::before{
+    position: absolute;
+    content: "";
+    background: url('../img/icons/history-arrow-up.png') no-repeat;
+    -webkit-background-size: 12px 14px;
+    background-size: 12px 14px;
+    width: 12px;
+    height: 14px;
+    margin-right: 5px;
+    display: inline-block;
+    left: -15px;
+    top: 22px;
+}
+.mobile-history-list .mobile-history-withdraw::before{
+    position: absolute;
+    content: "";
+    background: url('../img/icons/history-arrow-down.png') no-repeat;
+    -webkit-background-size: 12px 14px;
+    background-size: 12px 14px;
+    width: 12px;
+    height: 14px;
+    margin-right: 5px;
+    display: inline-block;
+    left: -15px;
+    top: 22px;
+}
+/*history*/
 @media only screen and (max-width: 1200px) {
     .min-cart-height {
         min-height: 232px;
