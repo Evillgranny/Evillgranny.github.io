@@ -662,16 +662,16 @@ table.table-fees td, table.table-fees th {
     border-radius: 10px;
     background-color: #a0a0a0;
 }
-#InternationalBankTransferBtn,
+#internationalBankTransferBtn,
 #sepaTransfer {
     display: none;
 }
-#InternationalBankTransferBtn ~ span,
+#internationalBankTransferBtn ~ span,
 #sepaTransfer ~ span{
     cursor: pointer;
 }
 
-#InternationalBankTransferBtn:checked ~ span,
+#internationalBankTransferBtn:checked ~ span,
 #sepaTransfer:checked ~ span {
     font-weight: 400;
     border-bottom: 2px solid rgb(2,149,192);
