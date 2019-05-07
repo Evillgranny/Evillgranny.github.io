@@ -598,11 +598,11 @@ table.table-fees td, table.table-fees th {
 }
 #btnDepositBank:checked ~ span{
     font-weight: 700;
-    border-bottom: 3px solid rgb(2,149,192);
+    border-bottom: 2px solid rgb(2,149,192);
 }
 #btnDepositCrypto:checked ~ span {
     font-weight: 700;
-    border-bottom: 3px solid rgb(2,149,192);
+    border-bottom: 2px solid rgb(2,149,192);
 }
 #btnDepositCrypto {
     display: none;
@@ -788,6 +788,78 @@ table.table-fees td, table.table-fees th {
     display: inline-block;
     left: -15px;
     top: 22px;
+}
+.setting-menu-list {
+    list-style: none;
+    cursor: pointer;
+}
+.setting-menu-list input {
+    display: none;
+}
+.setting-menu-list input:checked ~ span {
+    font-weight: 400;
+    border-bottom: 2px solid rgb(2,149,192);
+}
+.setting-menu-list span{
+    cursor: pointer;
+}
+.setting-input-text {
+    font-size: 13px;
+    color: #8A8989;
+}
+.setting-input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+}
+.setting-select {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+}
+.save-setting-btn {
+    width: 241px;
+    height: 46px;
+    background: #0295C0;
+    border-radius: 10px;
+}
+#changePasswordBlock,
+#securityBlock {
+    display: none;
+}
+.add-photo-block {
+    border: 1px dashed #0295C0;;
+}
+.add-photo-block-main {
+    color: #0295C0;
+    font-weight: bold;
+    font-size: 17px
+}
+.add-photo-block-text {
+    font-size: 17px;
+}
+.add-photo-block-btn {
+    height: 40px;
+    background: #0295C0;
+}
+.setting-input-btn {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 40px;
+}
+.mobile-setting-choise input{
+    display: none;
+}
+#mobileChangePassword,
+#mobileSettingSecurityBlock{
+    display: none;
+}
+.mobile-setting-choise input:checked ~ span {
+    border-bottom: 2px solid rgb(10, 153, 194);
+    font-weight: 400;
 }
 /*history*/
 @media only screen and (max-width: 1200px) {

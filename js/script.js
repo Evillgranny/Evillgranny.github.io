@@ -66,3 +66,41 @@ $(mobileBankWithdrawChoise).change(function () {
         $('#mobileInternationalBankTransferBlock').hide();
     }
 });
+//Выбор в настройках
+$('.setting-menu-lists').change(function () {
+    if ($('#settingBankAccount').is(':checked')) {
+        console.log(1);
+        $('#bankAccountBlock').show();
+        $('#changePasswordBlock').hide();
+        $('#securityBlock').hide();
+    } else if ($('#settingChangePassword').is(':checked')) {
+        console.log(2)
+        $('#bankAccountBlock').hide();
+        $('#changePasswordBlock').show();
+        $('#securityBlock').hide();
+    } else if ($('#settingSecurity').is(':checked')) {
+        console.log(3)
+        $('#bankAccountBlock').hide();
+        $('#changePasswordBlock').hide();
+        $('#securityBlock').show();
+    }
+});
+//Выбор в мобильных настройках
+$('.mobile-setting-choise').change(function () {
+    if ($('#mobileSettingBankAccount').is(':checked')) {
+        console.log(1);
+        $('#mobileBankAccountBlock').show();
+        $('#mobileChangePassword').hide();
+        $('#mobileSettingSecurityBlock').hide();
+    } else if ($('#mobileSettingChangePassword').is(':checked')) {
+        console.log(2)
+        $('#mobileBankAccountBlock').hide();
+        $('#mobileChangePassword').show();
+        $('#mobileSettingSecurityBlock').hide();
+    } else if ($('#mobileSettingSecurity').is(':checked')) {
+        console.log(3)
+        $('#mobileBankAccountBlock').hide();
+        $('#mobileChangePassword').hide();
+        $('#mobileSettingSecurityBlock').show();
+    }
+});
