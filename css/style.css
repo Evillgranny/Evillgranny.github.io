@@ -891,7 +891,20 @@ table.table-fees td, table.table-fees th {
     position: relative;
     top: 2px;
 }
+
 /*history*/
+
+/*FAQ*/
+.faq-main {
+    font-size: 70px;
+    color: #FFFFFF;
+}
+.faq-main-text {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+/*END FAQ*/
 @media only screen and (max-width: 1200px) {
     .min-cart-height {
         min-height: 232px;
@@ -1074,7 +1087,20 @@ table.table-fees td, table.table-fees th {
     }
 
     /*end team*/
+    /*faq*/
+    .faq-main {
+        font-size: 37px;
+        color: #FFFFFF;
+    }
+    .faq-main-text {
+        font-size: 20px;
+    }
+    .faq-main-img {
+        width: 50%;
+    }
+    /*end faq*/
 }
+
 
 
 
