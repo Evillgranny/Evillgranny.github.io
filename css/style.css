@@ -861,6 +861,36 @@ table.table-fees td, table.table-fees th {
     border-bottom: 2px solid rgb(10, 153, 194);
     font-weight: 400;
 }
+.money-way-menu li:nth-child(1) a::before {
+    content: url("../img/icons/1.png");
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+.money-way-menu li:nth-child(2) a::before {
+    content: url("../img/icons/2.png");
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+.money-way-menu li:nth-child(3) a::before {
+    content: url("../img/icons/3.png");
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+.money-way-menu li:nth-child(4) a::before {
+    content: url("../img/icons/4.png");
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+.left-account-menu .money-way-menu-list:nth-child(5) .money-way-menu-list-link::before{
+    content: url("../img/icons/5.png");
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
 /*history*/
 @media only screen and (max-width: 1200px) {
     .min-cart-height {

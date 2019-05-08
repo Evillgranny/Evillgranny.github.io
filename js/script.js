@@ -32,7 +32,7 @@ $(personalAccountNavigation).change(function () {
 });
 
 $(bankWithdrawChoise).change(function () {
-    if ($('#InternationalBankTransferBtn').is(':checked')) {
+    if ($('#internationalBankTransferBtn').is(':checked')) {
         $('#internationalBankTransferBlock').show();
         $('#sepaTransferBlock').hide();
     } else if ($('#sepaTransfer').is(':checked')) {
