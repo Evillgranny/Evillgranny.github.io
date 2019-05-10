@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Setting</title>
+    <title>Support</title>
     <!-- Font Awesome -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
@@ -139,98 +139,39 @@
                             </ul>
                         </div>
                         <div class="right-account-menu col-10 mt-2 px-0 pb-3">
-                            <div class="setting-menu-container py-3">
-                                <ul class="setting-menu-lists d-flex justify-content-around mb-0">
-                                    <li class="setting-menu-list"><label><input name="setting" type="radio" id="settingBankAccount" checked><span>Bank Account</span></label></li>
-                                    <li class="setting-menu-list"><label><input name="setting" type="radio" id="settingChangePassword"><span>Change Password</span></label></li>
-                                    <li class="setting-menu-list"><label><input name="setting" type="radio" id="settingSecurity"><span>Security</span></label></li>
-                                </ul>
+                            <div class="support-container container py-5">
+                                <select class="support-select-category ml-lg-5 d-flex flex-column">
+                                    <option value="Bank Withdrawal">Bank Withdrawal</option>
+                                    <option value="Bitcoin Withdrawal">Bitcoin Withdrawal</option>
+                                    <option value="XPR Withdrawal">XPR Withdrawal</option>
+                                    <option value="LTC Withdrawal">LTC Withdrawal</option>
+                                    <option value="LTC Withdrawal">ETH Withdrawal</option>
+                                    <option value="LTC Withdrawal">BCH Withdrawal</option>
+                                    <option value="Bank Deposit">Bank Deposit</option>
+                                    <option value="Bitcoin Deposit">Bitcoin Deposit</option>
+                                    <option value="XRP Deposit">XRP Deposit</option>
+                                    <option value="LTC Deposit">LTC Deposit</option>
+                                    <option value="ETH Deposit">ETH Deposit</option>
+                                    <option value="BCH Deposit">BCH Deposit </option>
+                                    <option value="Verification">Verification</option>
+                                    <option value="Corporate/Business Verification">Corporate/Business Verification</option>
+                                    <option value="Know Your Customer">Know Your Customer Procedure</option>
+                                    <option value="Know Your Customer">HW Wallet</option>
+                                </select>
+                                <textarea class="support-textarea col-lg-6 col-12 ml-lg-5 mt-3" placeholder="Your message"></textarea>
+                                <div class="support-drop-files-block mt-3 col-lg-6 col-12 ml-lg-5 justify-content-center">
+                                        <div class="support-drop-files-content d-flex justify-content-center h-100">
+                                            <img src="img/cloud-img.png" alt="" class="support-drop-files-img align-self-center">
+                                            <div class="support-drop-files-text align-self-center ml-3">
+                                                <p class="support-drop-files-blue-text mb-0">Drag & drop file here</p>
+                                                <p class="support-drop-files-grey-text mb-0">PNG, JPG or PDF</p>
+                                            </div>
+                                            <p class="align-self-center mb-0 ml-4"><span class="support-drop-files-grey-text mr-2">or</span><span class="support-drop-files-blue-text underline">browse file</span></p>
+                                        </div>
+                                </div>
+                                <p class=" px-3 ml-lg-5 support-description mt-2 text-center text-lg-left">You won't see your uploads after 5 minutes, but don't worry — we got them!</p>
+                                <button class="btn ml-lg-5 support-btn">SEND TO SUPPORT</button>
                             </div>
-
-                            <div class="right-account-menu-hr mb-4"></div>
-
-                            <section class="bank-account" id="bankAccountBlock">
-                                <div class="bank-account-container d-flex justify-content-around">
-                                    <div class="bank-account-input-block col-5">
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">IBAN / Bank Account:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Bank Name:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Bank Postal Code:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Bank Country:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <button class="save-setting-btn btn mt-3 ml-0">
-                                            SAVE SETTINGS
-                                        </button>
-                                    </div>
-
-
-                                    <div class="bank-account-input-block right-column-setting col-5">
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Bank SWIFT / BIC:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Bank Address:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Bank City:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Preferred Currency:</p>
-                                        <select class="col-12 setting-select">
-                                            <option value="1">Euro</option>
-                                            <option value="2">Dollar</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                            </section>
-
-                            <section class="change-password" id="changePasswordBlock">
-                                <div class="change-password-container">
-                                    <div class="change-password-content col-5 ml-lg-5">
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Current Password:</p>
-                                        <input type="password" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">New Password:</p>
-                                        <input type="password" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Repeat New Password:</p>
-                                        <input type="password" class="col-12 setting-input mb-3">
-
-                                        <button class="save-setting-btn btn mt-3 ml-0">
-                                            CHANGE PASSWORD
-                                        </button>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section class="security-block" id="securityBlock">
-                                  <div class="security-content d-flex justify-content-center mt-5">
-                                      <div class="add-photo-block col-8 col-lg-6 mx-0 text-center py-5">
-                                         <span class="add-photo-block-main">ENABLED</span><br>
-                                         <span class="add-photo-block-text">Two-factor authentication is enabled.</span>
-                                      </div>
-                                  </div>
-                                <div class="add-photo-button-block d-flex justify-content-around mt-5">
-                                    <div class="add-photo-block-input col-6">
-                                        <p class="setting-input-text pl-0 col-12 mb-0">Repeat New Password:</p>
-                                        <input type="text" class="col-12 setting-input-btn mb-3" placeholder="Verification code">
-                                    </div>
-
-                                    <div class="add-photo-button-block-block col-6  ml-0">
-                                        <p class="setting-input-text pl-0 col-12 mb-0">Disable two-factor authentification</p>
-                                        <button class="add-photo-block-btn btn mt-0 w-100 ml-0">
-                                            DISABLE
-                                        </button>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -239,92 +180,46 @@
     </div>
 </header>
 
-<section class="setting-mobile py-5 mt-5 d-md-none container">
-    <div class="mobile-setting-choise d-flex flex-column flex-sm-row col-12 container mb-3">
-        <label class="mr-5"><input type="radio" name="mobileSetting" id="mobileSettingBankAccount" checked><span>Bank Account</span></label>
-        <label class="mr-5"><input type="radio" name="mobileSetting" id="mobileSettingChangePassword"><span>Change Password</span></label>
-        <label><input type="radio" name="mobileSetting" id="mobileSettingSecurity"><span>Security</span></label>
-    </div>
+<section class="support-mobile py-5 mt-5 d-md-none container">
+    <h2 class="mobile-support-main">Support</h2>
 
-    <div class="container" id="mobileBankAccountBlock">
-        <p class="setting-input-text pl-0 col-12 mb-0">IBAN / Bank Account:</p>
-        <input type="password" class="col-12 setting-input mb-3">
+    <select class="support-select-category ml-0 pl-0 mt-5 d-flex flex-column">
+        <option value="Bank Withdrawal">Bank Withdrawal</option>
+        <option value="Bitcoin Withdrawal">Bitcoin Withdrawal</option>
+        <option value="XPR Withdrawal">XPR Withdrawal</option>
+        <option value="LTC Withdrawal">LTC Withdrawal</option>
+        <option value="LTC Withdrawal">ETH Withdrawal</option>
+        <option value="LTC Withdrawal">BCH Withdrawal</option>
+        <option value="Bank Deposit">Bank Deposit</option>
+        <option value="Bitcoin Deposit">Bitcoin Deposit</option>
+        <option value="XRP Deposit">XRP Deposit</option>
+        <option value="LTC Deposit">LTC Deposit</option>
+        <option value="ETH Deposit">ETH Deposit</option>
+        <option value="BCH Deposit">BCH Deposit </option>
+        <option value="Verification">Verification</option>
+        <option value="Corporate/Business Verification">Corporate/Business Verification</option>
+        <option value="Know Your Customer">Know Your Customer Procedure</option>
+        <option value="Know Your Customer">HW Wallet</option>
+    </select>
 
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank Name:</p>
-        <input type="password" class="col-12 setting-input mb-3">
+    <textarea class="support-textarea px-2 w-100 mt-3" placeholder="Your message"></textarea>
 
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank Postal Code:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank Postal Code:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank Country:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank SWIFT / BIC:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank Address:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank City:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Preferred Currency:</p>
-        <select class="col-12 setting-select">
-            <option value="1">Euro</option>
-            <option value="2">Dollar</option>
-        </select>
-
-        <div class="button-mobile-setting text-center">
-            <button class="add-photo-block-btn btn mt-5 w-75 mx-auto">
-                SAVE SETTINGS
-            </button>
-        </div>
-
-    </div>
-
-    <div class="setting-mobile-content col-12" id="mobileChangePassword">
-        <p class="setting-input-text pl-0 col-12 mb-0">Current Password:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">New Password:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Repeat New Password:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <div class="button-mobile-setting text-center">
-            <button class="add-photo-block-btn btn mt-5  w-75">
-                CHANGE PASSWORD
-            </button>
-        </div>
-    </div>
-
-
-
-    <div id="mobileSettingSecurityBlock">
-        <div class="security-content d-flex justify-content-center mt-5">
-            <div class="add-photo-block col-12 col-lg-6 mx-0 text-center py-5">
-                <span class="add-photo-block-main">ENABLED</span><br>
-                <span class="add-photo-block-text">Two-factor authentication is enabled.</span>
+    <div class="support-drop-files-block mt-3 col-lg-6 col-12 ml-lg-5 justify-content-center">
+        <div class="support-drop-files-content d-flex justify-content-center flex-column h-100">
+            <img src="img/cloud-img.png" alt="" class="support-drop-files-img mt-5 align-self-center">
+            <div class="support-drop-files-text align-self-center mt-3 text-center">
+                <p class="support-drop-files-blue-text mb-0">Drag & drop file here</p>
+                <p class="support-drop-files-grey-text mb-0">PNG, JPG or PDF</p>
             </div>
-        </div>
-        <div class="add-photo-button-block d-flex justify-content-around flex-column flex-sm-row mt-5">
-            <div class="add-photo-block-input col-sm-6 mx-auto text-center">
-                <p class="setting-input-text pl-0 col-12 mb-0">Repeat New Password:</p>
-                <input type="text" class="col-12 mx-0 setting-input-btn mb-3" placeholder="Verification code">
-            </div>
-
-            <div class="add-photo-button-block-block col-sm-6 mx-auto text-center ml-0">
-                <p class="setting-input-text pl-0  mb-0">Disable two-factor authentification</p>
-                <button class="add-photo-block-btn btn mt-0 w-100 ml-0">
-                    DISABLE
-                </button>
-            </div>
+            <p class="align-self-center mb-0 mt-3 mb-5"><span class="support-drop-files-grey-text mr-2">or</span><span class="support-drop-files-blue-text underline">browse file</span></p>
         </div>
     </div>
+    <p class=" px-3 support-description mt-2 text-center">You won't see your uploads after 5 minutes, but don't worry — we got them!</p>
+    <div class="mobile-btn-support text-center mt-3">
+        <button class="btn support-btn">SEND TO SUPPORT</button>
+    </div>
+
+
 </section>
 <!-- Footer -->
 <footer class="page-footer text-dark font-small pt-5">

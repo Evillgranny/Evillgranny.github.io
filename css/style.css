@@ -493,6 +493,7 @@ table.table-fees td, table.table-fees th {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 15px;
+    position: relative;
 }
 .money-way-menu-list:hover {
     background-color: rgb(18,23,71) !important;
@@ -861,35 +862,13 @@ table.table-fees td, table.table-fees th {
     border-bottom: 2px solid rgb(10, 153, 194);
     font-weight: 400;
 }
-.money-way-menu li:nth-child(1) a::before {
-    content: url("../img/icons/1.png");
-    margin-right: 10px;
-    position: relative;
-    top: 2px;
+.money-way-menu-list label {
+    width: 100%;
+    text-align: center;
 }
-.money-way-menu li:nth-child(2) a::before {
-    content: url("../img/icons/2.png");
-    margin-right: 10px;
-    position: relative;
-    top: 2px;
-}
-.money-way-menu li:nth-child(3) a::before {
-    content: url("../img/icons/3.png");
-    margin-right: 10px;
-    position: relative;
-    top: 2px;
-}
-.money-way-menu li:nth-child(4) a::before {
-    content: url("../img/icons/4.png");
-    margin-right: 10px;
-    position: relative;
-    top: 2px;
-}
-.left-account-menu .money-way-menu-list:nth-child(5) .money-way-menu-list-link::before{
-    content: url("../img/icons/5.png");
-    margin-right: 10px;
-    position: relative;
-    top: 2px;
+.money-way-menu-list img {
+    position: absolute;
+    left: 10px;
 }
 
 /*history*/
@@ -977,6 +956,75 @@ table.table-fees td, table.table-fees th {
     margin-left: 5px;
 }
 /*LEGAL*/
+/*Support*/
+.support-select-category {
+    font-size: 20px;
+    border: none;
+    background: none;
+}
+.support-textarea {
+    height: 190px;
+    resize: none;
+    padding-top: 12px;
+    padding-right: 18px;
+    font-size: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.support-drop-files-block {
+    height: 143px;
+    border: 1px dashed #0295C0;
+}
+.support-drop-files-blue-text {
+    font-size: 17px;
+    text-align: center;
+    color: #0295C0;
+}
+.support-drop-files-grey-text {
+    font-size: 17px;
+    font-weight: 100;
+    color: #AEAEAE;
+}
+span.support-drop-files-blue-text {
+    cursor: pointer;
+}
+.underline {
+    text-decoration: underline;
+}
+.support-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #989898;
+}
+.support-btn {
+    width: 240px;
+    height: 45px;
+    background: #0295C0;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+.mobile-support-main {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: #000000;
+}
+.support-mobile  .support-select-category {
+    font-size: 18px;
+    color: #000000;
+}
+.support-mobile .support-drop-files-block {
+    height: auto;
+}
+.support-mobile .support-btn {
+    width: 200px;
+    font-size: 15px;
+}
+
+/*End Support*/
 @media only screen and (max-width: 1200px) {
     .min-cart-height {
         min-height: 232px;
