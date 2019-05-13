@@ -1023,8 +1023,82 @@ span.support-drop-files-blue-text {
     width: 200px;
     font-size: 15px;
 }
-
 /*End Support*/
+/*invoice*/
+.invoice-main {
+    font-size: 25px;
+    font-weight: 400;
+}
+.invoice-text {
+    font-size: 13px;
+    font-weight: 400;
+}
+.invoice-content {
+    background: #FFFFFF;
+    border: 1px solid #B5B5B5;
+    border-radius: 5px;
+}
+.invoice-content-main {
+    font-size: 20px;
+    font-weight: 400;
+}
+.invoice-content-p {
+    font-weight: 300;
+    font-size: 15px;
+}
+.invoice-content-bold-span {
+    font-weight: 400;
+}
+.invoice-description {
+    font-size: 15px;
+}
+.invoice-description-span {
+    font-weight: 400;
+}
+.invoice-hr {
+    background: rgb(2,149,192);
+    height: 1px;
+}
+.total-amount-text {
+    font-size: 23px;
+    font-weight: 400;
+}
+.total-amount-price {
+    font-size: 23px;
+    font-weight: 400;
+}
+.invoice-main-mobile {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+}
+.invoice-text-mobile {
+    font-weight: 300;
+    font-size: 12px;
+}
+.invoice-content-main-mobile {
+    font-size: 20px;
+    font-weight: 400;
+}
+.invoice-content-bold-span-mobile {
+    font-size: 12px;
+    font-weight: 400;
+}
+.invoice-content-span-mobile {
+    font-size: 12px;
+}
+.invoice-description-mobile {
+    font-size: 13px;
+}
+.total-amount-text-mobile {
+    font-weight: 400;
+    font-size: 17px;
+}
+.total-amount-price-mobile {
+    font-weight: 400;
+    font-size: 17px;
+}
+/*end invoice*/
 @media only screen and (max-width: 1200px) {
     .min-cart-height {
         min-height: 232px;

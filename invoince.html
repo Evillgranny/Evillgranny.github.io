@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Invoice</title>
+    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" />
+</head>
+
+<body>
+
+<!--Main Navigation-->
+<header class="mobile-header">
+
+    <nav class="navbar navbar-expand-lg navbar-dark custom-pt">
+        <div class="container header-container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="OERO" class="logo-img">
+            </a>
+            <button class="navbar-toggler" style="padding: 0 !important;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navigation-menu" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto menu-mobile-styles">
+                    <li class="nav-item mr-xs-0 mr-lg-5 d-none d-md-block">
+                        <a class="nav-link navigation-link drop-header" href="use-cases.html">USE CASES <span class="sr-only">(current)</span></a>
+                    </li>
+                    <div class="header-hr d-none d-md-block"></div>
+                    <li class="nav-item dropdown mr-xs-0 mr-lg-5 d-none d-md-block" id="dropdownOero">
+                        <a class="nav-link dropdown-toggle navigation-link drop-header" id="navbarDropdownMenuOero" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">OERO</a>
+                        <div class="dropdown-menu dropdown-primary header-dropdown-items oreo-dropdown" aria-labelledby="navbarDropdownMenuOero">
+                            <div class="before-triangle"></div>
+                            <div class="dropdown-triangle"></div>
+                            <a class="dropdown-item" href="transparent.html">TRANSPARENT</a>
+                        </div>
+                    </li>
+                    <div class="header-hr d-none d-md-block"></div>
+                    <!-- Dropdown -->
+                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none text-center mt-4">
+                        <img src="img/icons/account-people.png" class="account-menu-img mb-2 mx-auto">
+                        <h2 class="account-menu-user-name mb-2">JANE DOE</h2>
+                        <h2 class="account-menu-user-balance mb-0">2560</h2>
+                        <p class="user-balance-text mb-0">Your balance OERO</p>
+                        <p class="user-balance-text-under">( 1  OERO  =  1 EUR )</p>
+                    </li>
+                    <li class="nav-item dropdown d-none d-md-block mr-xs-0 mr-lg-5">
+                        <a class="nav-link dropdown-toggle navigation-link drop-header" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">ABOUT US</a>
+                        <div class="dropdown-menu dropdown-primary header-dropdown-items" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="before-triangle"></div>
+                            <div class="dropdown-triangle"></div>
+                            <a class="dropdown-item first-dd-item" href="whitepaper.html">WHITEPAPER</a>
+                            <a class="dropdown-item" href="legal.html">LEGAL</a>
+                            <a class="dropdown-item" href="fees.html">FEES</a>
+                            <a class="dropdown-item" href="team.html">TEAM</a>
+                            <a class="dropdown-item" href="FAQ.html">FAQ</a>
+                        </div>
+                    </li>
+                    <div class="header-hr d-none d-md-block"></div>
+                    <li class="nav-item dropdown mr-xs-0 d-none d-md-block">
+                        <a class="nav-link dropdown-toggle navigation-link drop-header"  data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false" id="userName">JANE DOE</a>
+                        <div class="dropdown-menu dropdown-primary header-dropdown-items last-dropdown" aria-labelledby="navbarDropdownMenuOero">
+                            <div class="before-triangle"></div>
+                            <div class="dropdown-triangle"></div>
+                            <a class="dropdown-item" href="#">PERSONAL <br> ACCOUNT</a>
+                            <a class="dropdown-item" href="#">SIGN OUT</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
+                        <a class="nav-link navigation-link drop-header" href="personal-account.html">DEPOSIT<span class="sr-only">(current)</span></a>
+                    </li>
+                    <div class="header-hr d-md-none d-block"></div>
+                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
+                        <a class="nav-link navigation-link drop-header" href="withdraw.html">WITHDRAW<span class="sr-only">(current)</span></a>
+                    </li>
+                    <div class="header-hr d-md-none d-block"></div>
+                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
+                        <a class="nav-link navigation-link drop-header" href="">HISTORY<span class="sr-only">(current)</span></a>
+                    </li>
+                    <div class="header-hr d-md-none d-block"></div>
+                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
+                        <a class="nav-link navigation-link drop-header" href="setting.html">SETTING<span class="sr-only">(current)</span></a>
+                    </li>
+                    <div class="header-hr d-md-none d-block"></div>
+                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
+                        <a class="nav-link navigation-link drop-header" href="support.html">SUPPORT<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none text-center">
+                        <button type="button" class="btn m-nav-button mb-3 sign-out-btn">SIGN OUT</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="view full-page-intro d-none d-md-block" style="background: url('img/main-background.png')no-repeat center center; background-size: cover;">
+        <div class="mask d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row wow fadeIn mt-5" style="visibility: visible; animation-name: fadeIn;">
+                    <div class="cabinet-content col-12 px-0 d-flex">
+                        <div class="left-account-menu col-2 pt-3 pb-1 px-0 mt-2">
+                            <ul class="d-flex justify-content-between flex-column text-center h-100">
+                                <li class="left-account-menu-list">
+                                    <img src="img/icons/account-people.png" class="account-menu-img mb-2 mx-auto">
+                                    <h2 class="account-menu-user-name mb-3">JANE DOE</h2>
+                                </li>
+                                <li class="left-account-menu-list">
+                                    <h2 class="account-menu-user-balance mb-0">2560</h2>
+                                    <p class="user-balance-text mb-0">Your balance OERO</p>
+                                    <p class="user-balance-text-under">( 1  OERO  =  1 EUR )</p>
+                                </li>
+                                <li class="left-account-menu-list mt-3">
+                                    <ul class="money-way-menu">
+                                        <li class="money-way-menu-list"><label><img src="img/icons/1.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none"><a href="personal-account.html" class="money-way-menu-list-link">DEPOSIT</a></label></li>
+                                        <li class="money-way-menu-list"><label><img src="img/icons/2.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none" id="withdraw"><a href="withdraw.html" class="money-way-menu-list-link">WITHDRAW</a></label></li>
+                                        <li class="money-way-menu-list"><label><img src="img/icons/3.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none"><a href="history.html" class="money-way-menu-list-link">HISTORY</a></label></li>
+                                        <li class="money-way-menu-list"><label><img src="img/icons/4.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none"><a href="setting.html" class="money-way-menu-list-link">SETTINGS</a></label></li>
+                                    </ul>
+                                </li>
+                                <li class="left-account-menu-list">
+                                <li class="money-way-menu-list"><label><img src="img/icons/5.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none"><a href="support.html" class="money-way-menu-list-link">SUPPORT</a></label></li>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-account-menu col-10 mt-2 px-0 pb-3">
+                            <div class="invoice-container container py-5">
+                                <h2 class="invoice-main px-4">
+                                    INVOICE
+                                </h2>
+                                <p class="invoice-text px-4">
+                                    Please check data and approve the payment
+                                </p>
+                                <div class="invoice-content py-4 mt-5">
+                                    <div class="invoice-content-container d-flex">
+                                        <div class="left-invoice-content col-6">
+                                            <h3 class="invoice-content-main col-12 mb-5">Payment receiver</h3>
+                                            <p class="invoice-content-p d-flex"><span class="invoice-content-bold-span mr-5 col-5 d-block">Company name</span><span class="invoice-content-span col-6">Oero International</span></p>
+                                            <p class="invoice-content-p d-flex"><span class="invoice-content-bold-span mr-5 col-5 d-block">Registration number</span><span class="invoice-content-span col-6">Registration number</span></p>
+                                            <p class="invoice-content-p d-flex"><span class="invoice-content-bold-span mr-5 col-5 d-block">Bank name</span><span class="invoice-content-span col-6">UAB Mistertango Vilnius, Lithuania</span></p>
+                                            <p class="invoice-content-p d-flex"><span class="invoice-content-bold-span mr-5 col-5 d-block">Company name</span><span class="invoice-content-span col-6">Oero International</span></p>
+                                        </div>
+                                        <div class="left-invoice-content col-6">
+                                            <h3 class="invoice-content-main col-12 mb-5">Payment sender</h3>
+                                            <p class="invoice-content-p d-flex"><span class="invoice-content-bold-span mr-5 col-3 d-block">NAME</span><span class="invoice-content-span col-6"> Jane Doe</span></p>
+                                            <p class="invoice-content-p d-flex"><span class="invoice-content-bold-span mr-5 col-3 d-block">EMAIL</span><span class="invoice-content-span col-6"> janedoe@gmail.com</span></p>
+                                        </div>
+                                    </div>
+                                    <p class="invoice-description col-12 container px-4 mt-5"><span class="invoice-description-span">Payment description:</span> Payment for <span class="invoice-description-span">Jane Doe</span> balanced plan. Invoice: CNGRM-KT-000627</p>
+
+                                    <div class="invoice-hr col-12 mx-4 w-auto my-4"></div>
+
+                                    <div class="total-amount col-lg-7 d-flex justify-content-between px-4">
+                                        <p class="total-amount-text">Total amount</p>
+                                        <p class="total-amount-price">390.99 EUR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="support-mobile mt-5 d-md-none container">
+    <div class="invoice-container-mobile container py-5">
+        <h2 class="invoice-main-mobile">
+            INVOICE
+        </h2>
+        <p class="invoice-text-mobile">
+            Please check data and approve the payment
+        </p>
+        <div class="invoice-content py-4">
+            <div class="invoice-content-container">
+                <div class="left-invoice-content-mobile">
+                    <h3 class="invoice-content-main-mobile col-12 mb-5">Payment receiver</h3>
+                    <p class="invoice-content-p d-flex"><span class="invoice-content-bold-span-mobile col-6 d-block">Company name</span><span class="invoice-content-span-mobile col-6">Oero International</span></p>
+                    <p class="invoice-content-p d-flex"><span class="invoice-content-bold-span-mobile col-6 d-block">Registration number</span><span class="invoice-content-span-mobile col-6">Registration number</span></p>
+                    <p class="invoice-content-p d-flex"><span class="invoice-content-bold-span-mobile col-6 d-block">Bank name</span><span class="invoice-content-span-mobile col-6">UAB Mistertango Vilnius, Lithuania</span></p>
+                    <p class="invoice-content-p d-flex"><span class="invoice-content-bold-span-mobile col-6 d-block">Company name</span><span class="invoice-content-span-mobile col-6">Oero International</span></p>
+                    <h3 class="invoice-content-main col-12 mt-5 mb-5">Payment sender</h3>
+                    <p class="invoice-content-p d-flex"><span class="invoice-content-bold-span-mobile col-3 d-block">NAME</span><span class="invoice-content-span-mobile col-6"> Jane Doe</span></p>
+                    <p class="invoice-content-p d-flex"><span class="invoice-content-bold-span-mobile col-3 d-block">EMAIL</span><span class="invoice-content-span-mobile col-6"> janedoe@gmail.com</span></p>
+                    <p class="invoice-description-mobile col-12 container mt-5"><span class="invoice-description-span">Payment description:</span> Payment for <span class="invoice-description-span">Jane Doe</span> balanced plan. Invoice: CNGRM-KT-000627</p>
+                    <div class="invoice-hr col-12 mx-3 w-auto my-4"></div>
+                    <div class="total-amount col-lg-7 d-flex justify-content-between">
+                        <p class="total-amount-text-mobile">Total amount</p>
+                        <p class="total-amount-price-mobile">390.99 EUR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- Footer -->
+<footer class="page-footer text-dark font-small pt-5">
+
+    <!-- Footer Links -->
+    <div class="container text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-sm-6 col-md-4 mt-md-0 mt-3 footer-col">
+
+                <!-- Content -->
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-footer.png" alt="Oero" class="footer-img">
+                </a>
+                <div class="mt-2 first-footer-column">
+                    <a class="footer-link" href="#">Address:</a><br>
+                    <a class="footer-link" href="#">Registration number:</a><br>
+                    <a class="footer-link" href="tel:+37045322322">+ 370 45 32 2322</a> <br>
+                    <a class="footer-link" href="mailto:info@oero.io">info@oero.io</a>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-sm-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-sm-6 col-md-3 mb-md-0 mb-3 footer-col">
+
+                <!-- Links -->
+                <h5 class="text-uppercase mb-4">Use Cases</h5>
+
+                <ul class="list-unstyled" style="font-weight: 500;">
+                    <li>
+                        <a href="use-cases.html">For exchange</a>
+                    </li>
+                    <li>
+                        <a href="use-cases.html#cross-border-anchor">Cross-border transactions</a>
+                    </li>
+                    <li>
+                        <a href="use-cases.html#Hedge-against-volatility">Hedge against volatility</a>
+                    </li>
+                    <li>
+                        <a href="use-cases.html#acess-to-reliable-currency">Acces to reliable currency</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-sm-6 col-md-3 mb-md-0 mb-3 footer-col">
+
+                <!-- Links -->
+                <h5 class="text-uppercase mb-4 ">OERO</h5>
+
+                <ul class="list-unstyled" style="font-weight: 500;">
+                    <li>
+                        <a href="#!">Buying guide</a>
+                    </li>
+                    <li>
+                        <a href="#!">Wallet</a>
+                    </li>
+                    <li>
+                        <a href="transparent.html#transparent">Transparent</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-sm-6 col-md-2 mb-md-0 mb-3 order-2 footer-col">
+
+                <!-- Links -->
+                <h5 class="text-uppercase mb-4">About Us</h5>
+
+                <ul class="list-unstyled" style="font-weight: 500;">
+                    <li>
+                        <a href="whitepaper.html">Whitepaper</a>
+                    </li>
+                    <li>
+                        <a href="legal.html">Legal</a>
+                    </li>
+                    <li>
+                        <a href="fees.html">Fees</a>
+                    </li>
+                    <li>
+                        <a href="team.html">Team</a>
+                    </li>
+                    <li>
+                        <a href="FAQ.html">FAQ</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
+
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
