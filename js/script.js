@@ -3,7 +3,7 @@ let sendCryptoList = document.querySelector('.send-cryptocurency-list');
 let personalAccountNavigation = document.querySelector('.personal-account-navigation-lists');
 let withdrawNavigation = document.querySelector(".choice-withdraw-navigation");
 let bankWithdrawChoise = document.querySelector('.withdraw-bank-choise');
-let mobileBankWithdrawChoise = document.querySelector('.mobole-withdraw-bank-choise');
+let mobileBankWithdrawChoise = document.querySelector('.mobile-withdraw-bank-choise');
 
 $('#modalGetLogin').change(function(){
     if($("#modalGetLogin:checked")) {
@@ -61,7 +61,9 @@ $(mobileBankWithdrawChoise).change(function () {
     if ($('#mobileInternationalBankTransferBtn').is(':checked')) {
         $('#mobileInternationalBankTransferBlock').show();
         $('#mobileSepaTransferBlock').hide();
-    } else if ($('#MobileSepaTransfer').is(':checked')) {
+        console.log(1)
+    } else if ($('#mobileSepaTransfer').is(':checked')) {
+        console.log(2);
         $('#mobileSepaTransferBlock').show();
         $('#mobileInternationalBankTransferBlock').hide();
     }
@@ -69,17 +71,14 @@ $(mobileBankWithdrawChoise).change(function () {
 //Выбор в настройках
 $('.setting-menu-lists').change(function () {
     if ($('#settingBankAccount').is(':checked')) {
-        console.log(1);
         $('#bankAccountBlock').show();
         $('#changePasswordBlock').hide();
         $('#securityBlock').hide();
     } else if ($('#settingChangePassword').is(':checked')) {
-        console.log(2)
         $('#bankAccountBlock').hide();
         $('#changePasswordBlock').show();
         $('#securityBlock').hide();
     } else if ($('#settingSecurity').is(':checked')) {
-        console.log(3)
         $('#bankAccountBlock').hide();
         $('#changePasswordBlock').hide();
         $('#securityBlock').show();
@@ -88,17 +87,14 @@ $('.setting-menu-lists').change(function () {
 //Выбор в мобильных настройках
 $('.mobile-setting-choise').change(function () {
     if ($('#mobileSettingBankAccount').is(':checked')) {
-        console.log(1);
         $('#mobileBankAccountBlock').show();
         $('#mobileChangePassword').hide();
         $('#mobileSettingSecurityBlock').hide();
     } else if ($('#mobileSettingChangePassword').is(':checked')) {
-        console.log(2)
         $('#mobileBankAccountBlock').hide();
         $('#mobileChangePassword').show();
         $('#mobileSettingSecurityBlock').hide();
     } else if ($('#mobileSettingSecurity').is(':checked')) {
-        console.log(3)
         $('#mobileBankAccountBlock').hide();
         $('#mobileChangePassword').hide();
         $('#mobileSettingSecurityBlock').show();

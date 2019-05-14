@@ -114,7 +114,7 @@
             <div class="container">
                 <div class="row wow fadeIn mt-5" style="visibility: visible; animation-name: fadeIn;">
                     <div class="cabinet-content col-12 px-0 d-flex">
-                        <div class="left-account-menu col-2 pt-3 pb-1 px-0 mt-2">
+                        <div class="left-account-menu col-2 pt-3 pb-0 px-0 mt-2">
                             <ul class="d-flex justify-content-between flex-column text-center h-100">
                                 <li class="left-account-menu-list">
                                     <img src="img/icons/account-people.png" class="account-menu-img mb-2 mx-auto">
@@ -140,9 +140,9 @@
                         </div>
                         <div class="right-account-menu col-10 mt-2 px-0 pb-3">
                             <div class="setting-menu-container py-3">
-                                <ul class="setting-menu-lists d-flex justify-content-around mb-0">
-                                    <li class="setting-menu-list"><label><input name="setting" type="radio" id="settingBankAccount" checked><span>Bank Account</span></label></li>
-                                    <li class="setting-menu-list"><label><input name="setting" type="radio" id="settingChangePassword"><span>Change Password</span></label></li>
+                                <ul class="setting-menu-lists d-flex mb-0 ml-5">
+                                    <li class="setting-menu-list mr-5"><label><input name="setting" type="radio" id="settingBankAccount" checked><span>Bank Account</span></label></li>
+                                    <li class="setting-menu-list mr-5"><label><input name="setting" type="radio" id="settingChangePassword"><span>Change Password</span></label></li>
                                     <li class="setting-menu-list"><label><input name="setting" type="radio" id="settingSecurity"><span>Security</span></label></li>
                                 </ul>
                             </div>
@@ -209,20 +209,20 @@
                                 </div>
                             </section>
 
-                            <section class="security-block" id="securityBlock">
-                                  <div class="security-content d-flex justify-content-center mt-5">
-                                      <div class="add-photo-block col-8 col-lg-6 mx-0 text-center py-5">
+                            <section class="security-block ml-lg-5" id="securityBlock">
+                                  <div class="security-content d-flex col-6 mt-5">
+                                      <div class="add-photo-block col-12 mx-0 text-center py-5">
                                          <span class="add-photo-block-main">ENABLED</span><br>
                                          <span class="add-photo-block-text">Two-factor authentication is enabled.</span>
                                       </div>
                                   </div>
-                                <div class="add-photo-button-block d-flex justify-content-around mt-5">
-                                    <div class="add-photo-block-input col-6">
+                                <div class="add-photo-button-block d-flex mt-5">
+                                    <div class="add-photo-block-input col-6 col-lg-4">
                                         <p class="setting-input-text pl-0 col-12 mb-0">Repeat New Password:</p>
                                         <input type="text" class="col-12 setting-input-btn mb-3" placeholder="Verification code">
                                     </div>
 
-                                    <div class="add-photo-button-block-block col-6  ml-0">
+                                    <div class="add-photo-button-block-block col-6 col-lg-4 ml-0">
                                         <p class="setting-input-text pl-0 col-12 mb-0">Disable two-factor authentification</p>
                                         <button class="add-photo-block-btn btn mt-0 w-100 ml-0">
                                             DISABLE
@@ -239,12 +239,15 @@
     </div>
 </header>
 
-<section class="setting-mobile py-5 mt-5 d-md-none container">
-    <div class="mobile-setting-choise d-flex flex-column flex-sm-row col-12 container mb-3">
-        <label class="mr-5"><input type="radio" name="mobileSetting" id="mobileSettingBankAccount" checked><span>Bank Account</span></label>
-        <label class="mr-5"><input type="radio" name="mobileSetting" id="mobileSettingChangePassword"><span>Change Password</span></label>
-        <label><input type="radio" name="mobileSetting" id="mobileSettingSecurity"><span>Security</span></label>
+<section class="setting-mobile py-5 mt-5 d-md-none">
+    <div class="container">
+        <div class="mobile-setting-choise d-flex flex-column flex-sm-row  mb-3">
+            <label class="mr-5"><input type="radio" name="mobileSetting" id="mobileSettingBankAccount" checked><span>Bank Account</span></label>
+            <label class="mr-5"><input type="radio" name="mobileSetting" id="mobileSettingChangePassword"><span>Change Password</span></label>
+            <label><input type="radio" name="mobileSetting" id="mobileSettingSecurity"><span>Security</span></label>
+        </div>
     </div>
+
 
     <div class="container" id="mobileBankAccountBlock">
         <p class="setting-input-text pl-0 col-12 mb-0">IBAN / Bank Account:</p>
@@ -285,26 +288,29 @@
 
     </div>
 
-    <div class="setting-mobile-content col-12" id="mobileChangePassword">
-        <p class="setting-input-text pl-0 col-12 mb-0">Current Password:</p>
-        <input type="password" class="col-12 setting-input mb-3">
+    <div class="container">
+        <div class="setting-mobile-content " id="mobileChangePassword">
+            <p class="setting-input-text pl-0 col-12 mb-0">Current Password:</p>
+            <input type="password" class="w-100 setting-input mb-3">
 
-        <p class="setting-input-text pl-0 col-12 mb-0">New Password:</p>
-        <input type="password" class="col-12 setting-input mb-3">
+            <p class="setting-input-text pl-0 mb-0">New Password:</p>
+            <input type="password" class="w-100 setting-input mb-3">
 
-        <p class="setting-input-text pl-0 col-12 mb-0">Repeat New Password:</p>
-        <input type="password" class="col-12 setting-input mb-3">
+            <p class="setting-input-text pl-0 mb-0">Repeat New Password:</p>
+            <input type="password" class="w-100 setting-input mb-3">
 
-        <div class="button-mobile-setting text-center">
-            <button class="add-photo-block-btn btn mt-5  w-75">
-                CHANGE PASSWORD
-            </button>
+            <div class="button-mobile-setting text-center">
+                <button class="add-photo-block-btn btn mt-5  w-75">
+                    CHANGE PASSWORD
+                </button>
+            </div>
         </div>
     </div>
 
 
 
-    <div id="mobileSettingSecurityBlock">
+
+    <div id="mobileSettingSecurityBlock" class="container">
         <div class="security-content d-flex justify-content-center mt-5">
             <div class="add-photo-block col-12 col-lg-6 mx-0 text-center py-5">
                 <span class="add-photo-block-main">ENABLED</span><br>

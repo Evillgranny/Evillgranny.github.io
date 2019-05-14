@@ -98,6 +98,9 @@ label {
 #navbarDropdownMenuLink {
     z-index: 20;
 }
+#userName ~ .dropdown-menu .dropdown-item:last-child:hover {
+    background-color: rgba(100%, 0%, 0%, .5);
+}
 .header-dropdown-items a{
     font-family: 'Exo 2', sans-serif;
     padding-bottom: 2px;
@@ -487,13 +490,15 @@ table.table-fees td, table.table-fees th {
 }
 .left-account-menu {
     background-color: rgb(41,47,91);
+    border-radius: 5px 0 0 5px;
 }
 .money-way-menu-list {
     list-style: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     font-size: 15px;
     position: relative;
+    display: flex;
 }
 .money-way-menu-list:hover {
     background-color: rgb(18,23,71) !important;
@@ -505,6 +510,11 @@ table.table-fees td, table.table-fees th {
 }
 .money-way-menu-list-link:hover {
     color: #ffffff;
+}
+.money-way-menu .money-way-menu-list a{
+    padding-left: 5rem;
+    font-weight: 700;
+    line-height: 0;
 }
 .last-dropdown {
     left: -15px;
@@ -526,6 +536,7 @@ table.table-fees td, table.table-fees th {
 
 .right-account-menu {
     background-color: #fff;
+    border-radius: 0 5px 5px 0;
 }
 .send-input {
     border: 1px solid rgb(137,139,164);
@@ -539,19 +550,46 @@ table.table-fees td, table.table-fees th {
     padding-left: 10px;
     padding-right: 30%;
 }
+.money-way-menu-list:last-child a {
+    font-weight: 700;
+}
 .personal-account-navigation-list {
     list-style: none;
 }
+.personal-account-navigation-list label {
+    position: relative;
+}
 .personal-account-navigation-list span {
     cursor: pointer;
+    padding-bottom: 5px;
 }
 .personal-account-navigation-list input {
     display: none;
 }
+.coming-soon {
+    position: absolute;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: lowercase;
+    color: #FF0000;
+    top: 20px;
+    left: 0;
+}
+.mobile-crypto-dep-description {
+    font-size: 12px;
+    color: #000000;
+}
+.mobile-crypto-dep-btn {
+    width: 205px;
+    background: #0295C0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
 .right-account-menu-hr {
     width: 100%;
     height: 1px;
-    background: rgb(229,229,299);
+    background: rgba(0,0,0, .2);
 }
 .bank-deposit-descripton {
     font-size: 12px;
@@ -577,7 +615,7 @@ table.table-fees td, table.table-fees th {
     border-radius: 5px;
 }
 .bank-deposit-descripton-under {
-    font-size: 12px;
+    font-size: 10px;
     color: #000;
 }
 .bank-deposit-textarea {
@@ -651,6 +689,19 @@ table.table-fees td, table.table-fees th {
 .cabinet-content {
     height: 80vh;
 }
+.crypto-deposit-description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #535353;
+}
+.crypto-btn-dep {
+    background: #0295C0;
+    border-radius: 10px;
+    width: 240px;
+    height: 45px;
+    font-size: 15px;
+}
 .right-account-menu {
     overflow: auto;
 }
@@ -663,6 +714,25 @@ table.table-fees td, table.table-fees th {
     border-radius: 10px;
     background-color: #a0a0a0;
 }
+.withdraw-bank-choise {
+    padding-right: 0 !important;
+}
+.withdraw-bank-choise label {
+    width: 100% !important;
+    padding: 0 !important;
+}
+.payment-bank-choise label {
+    width: 100% !important;
+    padding: 0 !important;
+}
+.payment-bank-choise label span {
+    width: 100%;
+    padding: 5px 15px 5px 15px;
+}
+.withdraw-bank-choise label span {
+    width: 100%;
+    padding: 5px 15px 5px 15px;
+}
 #internationalBankTransferBtn,
 #sepaTransfer {
     display: none;
@@ -670,12 +740,14 @@ table.table-fees td, table.table-fees th {
 #internationalBankTransferBtn ~ span,
 #sepaTransfer ~ span{
     cursor: pointer;
+    display: block;
+    width: 100%;
 }
 
 #internationalBankTransferBtn:checked ~ span,
 #sepaTransfer:checked ~ span {
-    font-weight: 400;
-    border-bottom: 2px solid rgb(2,149,192);
+    font-weight: 700;
+    background: #b2cfe1;
 }
 #sepaTransferBlock {
     display: none;
@@ -684,13 +756,19 @@ table.table-fees td, table.table-fees th {
     display: none;
 }
 #mobileInternationalBankTransferBtn,
-#MobileSepaTransfer {
+#mobileSepaTransfer {
     display: none;
 }
+#mobileInternationalBankTransferBtn ~ span,
+#mobileSepaTransfer~ span {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
 #mobileInternationalBankTransferBtn:checked ~ span,
-#MobileSepaTransfer:checked ~ span {
-    font-weight: 400;
-    border-bottom: 2px solid rgb(2,149,192);
+#mobileSepaTransfer:checked ~ span {
+    font-weight: 700;
+    background: #b2cfe1;
 }
 /*history*/
 .history-nav {
@@ -713,7 +791,7 @@ table.table-fees td, table.table-fees th {
     margin-right: 10px;
     display: inline-block;
 }
-.history-entered::after {
+.history-entered::before {
     content: '';
     background: url("../img/icons/oero-to-cabinent.png");
     -webkit-background-size: 19px 19px;
@@ -725,7 +803,7 @@ table.table-fees td, table.table-fees th {
     position: relative;
     top: 3px;
 }
-.history-euro::after {
+.history-euro::before {
     content: '';
     background: url("../img/icons/euro.png");
     -webkit-background-size: 19px 19px;
@@ -733,8 +811,8 @@ table.table-fees td, table.table-fees th {
     display: inline-block;
     width: 19px;
     height: 19px;
-    margin-left: 10px;
     position: relative;
+    margin-right: 5px;
     top: 3px;
 }
 .balance-withdrawal .history-date::before {
@@ -747,7 +825,7 @@ table.table-fees td, table.table-fees th {
     margin-right: 10px;
     display: inline-block;
 }
-.history-oero::after {
+.history-oero::before {
     content: '';
     background: url("../img/icons/oero-to-cabinent.png");
     -webkit-background-size: 19px 19px;
@@ -755,7 +833,7 @@ table.table-fees td, table.table-fees th {
     display: inline-block;
     width: 19px;
     height: 19px;
-    margin-left: 10px;
+    margin-right: 10px;
     position: relative;
     top: 3px;
 }
@@ -774,7 +852,7 @@ table.table-fees td, table.table-fees th {
     height: 14px;
     margin-right: 5px;
     display: inline-block;
-    left: -15px;
+    left: -8px;
     top: 22px;
 }
 .mobile-history-list .mobile-history-withdraw::before{
@@ -787,7 +865,7 @@ table.table-fees td, table.table-fees th {
     height: 14px;
     margin-right: 5px;
     display: inline-block;
-    left: -15px;
+    left: -8px;
     top: 22px;
 }
 .setting-menu-list {
@@ -844,6 +922,8 @@ table.table-fees td, table.table-fees th {
 .add-photo-block-btn {
     height: 40px;
     background: #0295C0;
+    border-radius: 10px;
+    line-height: 0;
 }
 .setting-input-btn {
     border: 1px solid rgba(0, 0, 0, 0.5);
@@ -864,11 +944,13 @@ table.table-fees td, table.table-fees th {
 }
 .money-way-menu-list label {
     width: 100%;
-    text-align: center;
+    text-align: left !important;
+    align-self: center;
 }
 .money-way-menu-list img {
     position: absolute;
-    left: 10px;
+    left: 25px;
+    top: 3px;
 }
 
 /*history*/
@@ -975,6 +1057,7 @@ table.table-fees td, table.table-fees th {
 .support-drop-files-block {
     height: 143px;
     border: 1px dashed #0295C0;
+    border-radius: 5px;
 }
 .support-drop-files-blue-text {
     font-size: 17px;
@@ -1099,6 +1182,66 @@ span.support-drop-files-blue-text {
     font-size: 17px;
 }
 /*end invoice*/
+/*Crypto deposit*/
+.crypto-dep-text{
+    font-size: 17px;
+    color: #939393;
+}
+.crypto-dep-summ {
+    font-size: 17px;
+    font-weight: 700;
+}
+.crypto-dep-description {
+    font-size: 13px;
+    color: #909090;
+}
+.crypto-dep-input {
+    font-size: 13px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #929292;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.btn-crypto-dep {
+    width: 240px;
+    height: 45px;
+    font-size: 15px;
+    background: #0295C0;
+    border-radius: 10px;
+}
+.money-way-menu-list:last-child  a{
+    padding-left: 5rem;
+}
+.payment-bank-choise {
+    background-color: #f3fafc  !important;
+    max-width: 100% !important;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.open-bank-choise {
+    background: none;
+    border: none;
+    text-align: left;
+}
+.triangle-in-choise{
+    border: 20px solid transparent;	border-bottom: 10px solid #f3fafc;
+    position: absolute;
+    top: -35px;
+    left: 20px ;
+}
+.triangle-in-choise-mobile {
+    border: 20px solid transparent;	border-bottom: 10px solid #f3fafc;
+    position: absolute;
+    top: -30px;
+    left: 20px ;
+}
+
+/*end crypto deposit*/
 @media only screen and (max-width: 1200px) {
     .min-cart-height {
         min-height: 232px;
@@ -1111,6 +1254,12 @@ span.support-drop-files-blue-text {
     }
     .send-cryptocurency-list {
         left: 70%;
+    }
+    .money-way-menu .money-way-menu-list a{
+        padding-left: 4rem;
+    }
+    .money-way-menu-list:last-child  a{
+        padding-left: 4rem;
     }
 }
 @media only screen and (max-width: 991px) {
@@ -1335,6 +1484,20 @@ span.support-drop-files-blue-text {
         font-size: 22px;
     }
     /*end legal*/
+    /*start personal account*/
+    .money-way-menu .money-way-menu-list label {
+        text-align: center !important;
+    }
+    .money-way-menu-list:last-child label {
+        text-align: center !important;
+    }
+    .money-way-menu .money-way-menu-list a{
+        padding-left: 0;
+    }
+    .money-way-menu-list:last-child a {
+        padding-left: 0;
+    }
+    /*end personal account*/
 }
 
 
