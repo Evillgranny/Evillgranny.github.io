@@ -465,6 +465,8 @@ table.table-fees td, table.table-fees th {
     padding: 15px;
     border: 1px solid #ffffff;
     border-radius: 50%;
+    width: 63px;
+    height: 63px;
 }
 .account-menu-user-name {
     font-size: 14px;
@@ -491,6 +493,9 @@ table.table-fees td, table.table-fees th {
 .left-account-menu {
     background-color: rgb(41,47,91);
     border-radius: 5px 0 0 5px;
+}
+.left-account-menu > ul > .money-way-menu-list:last-child:hover {
+    border-radius: 0 0 0 5px;
 }
 .money-way-menu-list {
     list-style: none;
@@ -555,6 +560,7 @@ table.table-fees td, table.table-fees th {
 }
 .personal-account-navigation-list {
     list-style: none;
+    white-space: nowrap;
 }
 .personal-account-navigation-list label {
     position: relative;
@@ -749,6 +755,19 @@ table.table-fees td, table.table-fees th {
     font-weight: 700;
     background: #b2cfe1;
 }
+#mobileSettingBankAccount ~ span,
+#mobileSettingChangePassword ~ span,
+#mobileSettingSecurity ~ span{
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+#mobileSettingBankAccount:checked ~ span,
+#mobileSettingChangePassword:checked ~ span,
+#mobileSettingSecurity:checked ~ span{
+    font-weight: 700;
+    background: #b2cfe1;
+}
 #sepaTransferBlock {
     display: none;
 }
@@ -937,10 +956,6 @@ table.table-fees td, table.table-fees th {
 #mobileChangePassword,
 #mobileSettingSecurityBlock{
     display: none;
-}
-.mobile-setting-choise input:checked ~ span {
-    border-bottom: 2px solid rgb(10, 153, 194);
-    font-weight: 400;
 }
 .money-way-menu-list label {
     width: 100%;
@@ -1240,7 +1255,26 @@ span.support-drop-files-blue-text {
     top: -30px;
     left: 20px ;
 }
-
+.dep-status-content {
+    background: #FFFFFF;
+    border: 1px solid #0295C0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 300px;
+}
+.dep-status-black-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.dep-status-yellow-text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #EEAF0C;
+}
 /*end crypto deposit*/
 @media only screen and (max-width: 1200px) {
     .min-cart-height {

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Setting</title>
+    <title>deposit status</title>
     <!-- Font Awesome -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
@@ -90,7 +90,7 @@
                     </li>
                     <div class="header-hr d-md-none d-block"></div>
                     <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
-                        <a class="nav-link navigation-link drop-header" href="">HISTORY<span class="sr-only">(current)</span></a>
+                        <a class="nav-link navigation-link drop-header" href="history.html">HISTORY<span class="sr-only">(current)</span></a>
                     </li>
                     <div class="header-hr d-md-none d-block"></div>
                     <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
@@ -114,7 +114,7 @@
             <div class="container">
                 <div class="row wow fadeIn mt-5" style="visibility: visible; animation-name: fadeIn;">
                     <div class="cabinet-content col-12 px-0 d-flex">
-                        <div class="left-account-menu col-2 pt-3 pb-0 px-0 mt-2">
+                        <div class="left-account-menu col-2 pt-3 px-0 mt-2">
                             <ul class="d-flex justify-content-between flex-column text-center h-100">
                                 <li class="left-account-menu-list">
                                     <img src="img/icons/account-people.png" class="account-menu-img mb-2 mx-auto">
@@ -127,7 +127,7 @@
                                 </li>
                                 <li class="left-account-menu-list mt-3">
                                     <ul class="money-way-menu">
-                                        <li class="money-way-menu-list"><label><img src="img/icons/1.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none"><a href="personal-account.html" class="money-way-menu-list-link">DEPOSIT</a></label></li>
+                                        <li class="money-way-menu-list"><label><img src="img/icons/1.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none"><a href="personal-account.html" class="money-way-menu-list-link text-left">DEPOSIT</a></label></li>
                                         <li class="money-way-menu-list"><label><img src="img/icons/2.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none" id="withdraw"><a href="withdraw.html" class="money-way-menu-list-link">WITHDRAW</a></label></li>
                                         <li class="money-way-menu-list"><label><img src="img/icons/3.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none"><a href="history.html" class="money-way-menu-list-link">HISTORY</a></label></li>
                                         <li class="money-way-menu-list"><label><img src="img/icons/4.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none"><a href="setting.html" class="money-way-menu-list-link">SETTINGS</a></label></li>
@@ -138,210 +138,32 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="right-account-menu col-10 mt-2 px-0 pb-3">
-                            <div class="setting-menu-container py-3">
-                                <ul class="setting-menu-lists d-flex mb-0 ml-5">
-                                    <li class="setting-menu-list mr-5"><label><input name="setting" type="radio" id="settingBankAccount" checked><span>Bank Account</span></label></li>
-                                    <li class="setting-menu-list mr-5"><label><input name="setting" type="radio" id="settingChangePassword"><span>Change Password</span></label></li>
-                                    <li class="setting-menu-list"><label><input name="setting" type="radio" id="settingSecurity"><span>Security</span></label></li>
-                                </ul>
+
+                        <div class="right-account-menu col-10  mt-2 px-0 pb-3 d-flex">
+                            <div class="dep-status-content ml-5 col-7 col-lg-5 mt-5 w-100 text-center d-flex justify-content-center">
+                                <div class="dep-status-text-block align-self-center">
+                                    <h2 class="dep-status-black-text">your transaction</h2>
+                                    <h2 class="dep-status-yellow-text">in processing</h2>
+                                </div>
                             </div>
-
-                            <div class="right-account-menu-hr mb-4"></div>
-
-                            <section class="bank-account" id="bankAccountBlock">
-                                <div class="bank-account-container d-flex justify-content-around">
-                                    <div class="bank-account-input-block col-5">
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">IBAN / Bank Account:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Bank Name:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Bank Postal Code:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Bank Country:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <button class="save-setting-btn btn mt-3 ml-0">
-                                            SAVE SETTINGS
-                                        </button>
-                                    </div>
-
-
-                                    <div class="bank-account-input-block right-column-setting col-5">
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Bank SWIFT / BIC:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Bank Address:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Bank City:</p>
-                                        <input type="text" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Preferred Currency:</p>
-                                        <select class="col-12 setting-select">
-                                            <option value="1">Euro</option>
-                                            <option value="2">Dollar</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                            </section>
-
-                            <section class="change-password" id="changePasswordBlock">
-                                <div class="change-password-container">
-                                    <div class="change-password-content col-5 ml-lg-5">
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Current Password:</p>
-                                        <input type="password" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">New Password:</p>
-                                        <input type="password" class="col-12 setting-input mb-3">
-
-                                        <p class="setting-input-text pl-0 col-12 mb-0 mt-3">Repeat New Password:</p>
-                                        <input type="password" class="col-12 setting-input mb-3">
-
-                                        <button class="save-setting-btn btn mt-3 ml-0">
-                                            CHANGE PASSWORD
-                                        </button>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <section class="security-block ml-lg-5" id="securityBlock">
-                                  <div class="security-content d-flex col-6 mt-5">
-                                      <div class="add-photo-block col-12 mx-0 text-center py-5">
-                                         <span class="add-photo-block-main">ENABLED</span><br>
-                                         <span class="add-photo-block-text">Two-factor authentication is enabled.</span>
-                                      </div>
-                                  </div>
-                                <div class="add-photo-button-block d-flex mt-5">
-                                    <div class="add-photo-block-input col-6 col-lg-4">
-                                        <p class="setting-input-text pl-0 col-12 mb-0">Repeat New Password:</p>
-                                        <input type="text" class="col-12 setting-input-btn mb-3" placeholder="Verification code">
-                                    </div>
-
-                                    <div class="add-photo-button-block-block col-6 col-lg-4 ml-0">
-                                        <p class="setting-input-text pl-0 col-12 mb-0">Disable two-factor authentification</p>
-                                        <button class="add-photo-block-btn btn mt-0 w-100 ml-0">
-                                            DISABLE
-                                        </button>
-                                    </div>
-                                </div>
-                            </section>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 </header>
 
-<section class="setting-mobile py-5 mt-5 d-md-none">
-    <div class="container">
-        <div class="mobile-setting-choise d-flex flex-column flex-sm-row  mb-3">
-            <div class="mobole-withdraw-bank-choise d-flex flex-column flex-sm-row col-12">
-                <button class="dropdown-toggle mr-4 open-bank-choise" type="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Choose category</button>
-
-                <div class="dropdown-menu payment-bank-choise">
-                    <div class="withdraw-bank-choise col-12 pl-0">
-                        <div class="triangle-in-choise"></div>
-                        <label class="dropdown-item"><input type="radio" name="mobileSetting" id="mobileSettingBankAccount" checked><span>Bank Account</span></label>
-                        <label class="dropdown-item"><input type="radio" name="mobileSetting" id="mobileSettingChangePassword"><span>Change Password</span></label>
-                        <label class="dropdown-item"><input type="radio" name="mobileSetting" id="mobileSettingSecurity"><span>Security</span></label>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container" id="mobileBankAccountBlock">
-        <p class="setting-input-text pl-0 col-12 mb-0">IBAN / Bank Account:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank Name:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank Postal Code:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank Postal Code:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank Country:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank SWIFT / BIC:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank Address:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Bank City:</p>
-        <input type="password" class="col-12 setting-input mb-3">
-
-        <p class="setting-input-text pl-0 col-12 mb-0">Preferred Currency:</p>
-        <select class="col-12 setting-select">
-            <option value="1">Euro</option>
-            <option value="2">Dollar</option>
-        </select>
-
-        <div class="button-mobile-setting text-center">
-            <button class="add-photo-block-btn btn mt-5 w-75 mx-auto">
-                SAVE SETTINGS
-            </button>
-        </div>
-
-    </div>
-
-    <div class="container">
-        <div class="setting-mobile-content " id="mobileChangePassword">
-            <p class="setting-input-text pl-0 col-12 mb-0">Current Password:</p>
-            <input type="password" class="w-100 setting-input mb-3">
-
-            <p class="setting-input-text pl-0 mb-0">New Password:</p>
-            <input type="password" class="w-100 setting-input mb-3">
-
-            <p class="setting-input-text pl-0 mb-0">Repeat New Password:</p>
-            <input type="password" class="w-100 setting-input mb-3">
-
-            <div class="button-mobile-setting text-center">
-                <button class="add-photo-block-btn btn mt-5  w-75">
-                    CHANGE PASSWORD
-                </button>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <div id="mobileSettingSecurityBlock" class="container">
-        <div class="security-content d-flex justify-content-center mt-5">
-            <div class="add-photo-block col-12 col-lg-6 mx-0 text-center py-5">
-                <span class="add-photo-block-main">ENABLED</span><br>
-                <span class="add-photo-block-text">Two-factor authentication is enabled.</span>
-            </div>
-        </div>
-        <div class="add-photo-button-block d-flex justify-content-around flex-column flex-sm-row mt-5">
-            <div class="add-photo-block-input col-sm-6 mx-auto text-center">
-                <p class="setting-input-text pl-0 col-12 mb-0">Repeat New Password:</p>
-                <input type="text" class="col-12 mx-0 setting-input-btn mb-3" placeholder="Verification code">
-            </div>
-
-            <div class="add-photo-button-block-block col-sm-6 mx-auto text-center ml-0">
-                <p class="setting-input-text pl-0  mb-0">Disable two-factor authentification</p>
-                <button class="add-photo-block-btn btn mt-0 w-100 ml-0">
-                    DISABLE
-                </button>
-            </div>
+<section class="crypto-dep-content-mobile mt-5 py-5 d-md-none container">
+    <div class="dep-status-content  col 12 mt-5 w-100 text-center d-flex justify-content-center">
+        <div class="dep-status-text-block align-self-center">
+            <h2 class="dep-status-black-text">your transaction</h2>
+            <h2 class="dep-status-yellow-text">in processing</h2>
         </div>
     </div>
 </section>
+
+
 <!-- Footer -->
 <footer class="page-footer text-dark font-small pt-5">
 
