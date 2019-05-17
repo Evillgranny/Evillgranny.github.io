@@ -150,7 +150,7 @@
 
                         <div class="right-account-menu col-10 mt-2 px-0 pb-3">
                             <div class="personal-account-navigation py-3">
-                                <ul class="personal-account-navigation-lists col-12 col-lg-7 d-flex ml-lg-5 mb-0">
+                                <ul class="personal-account-navigation-lists col-12 col-lg-7 pl-lg-0 d-flex ml-lg-5 mb-0">
                                     <li class="personal-account-navigation-list align-self-center mr-3">
                                         <label><input type="radio" name="deposit-navigation" id="btnDepositBank" checked><span>Bank Transaction</span></label>
                                     </li>
@@ -169,7 +169,8 @@
                             <div class="right-account-menu-hr"></div>
 
                             <div class="bank-deposit-content ml-lg-5 mt-3" id="bankDepositBlock">
-                                <div class="mobole-withdraw-bank-choise d-flex flex-column flex-sm-row col-12">
+                                <h6 class="mobile-deposit-main col-5 pl-lg-0">Withdraw</h6>
+                                <div class="mobole-withdraw-bank-choise pl-lg-0 d-flex flex-column flex-sm-row col-12">
                                     <button class="dropdown-toggle mr-4 open-bank-choise" type="button" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">Choose a method of withdrawal</button>
 
@@ -308,9 +309,10 @@
                             </div>
 
                             <section class="cryotocurecy-deposit-block" id="cryptoDepositBlock">
-                                <div class="crypto-inputs-content d-flex flex-column ml-lg-5">
-                                    <div class="crypto-dep-inputs d-flex mt-5">
-                                        <div class="crypto-inputs-left col-4">
+                                <div class="crypto-inputs-content d-flex mt-3 flex-column ml-lg-5 col-12 col-lg-10 pl-lg-0">
+                                    <h6 class="mobile-deposit-main">Withdraw</h6>
+                                    <div class="crypto-dep-inputs d-flex my-3">
+                                        <div class="crypto-inputs-left px-0 col-4">
                                             <div class="crypto-deposit-content">
                                                 <input type="text" class="w-100">
                                                 <select class="first-crypto-select-dep">
@@ -321,7 +323,7 @@
                                         <div class="crypto-inputs-center align-self-center col-1">
                                             <img src="img/arrow-personal-acc.png" alt="" class="mx-auto">
                                         </div>
-                                        <div class="crypto-inputs-right col-4">
+                                        <div class="crypto-inputs-right col-4 px-0">
                                             <div class="crypto-deposit-content">
                                                 <input type="text" class="w-100">
                                                 <select class="first-crypto-select-dep">
@@ -335,14 +337,14 @@
                                         </div>
                                     </div>
 
-                                    <div class="input-block col-9 mt-5">
+                                    <div class="input-block col-9 px-0 my-3">
                                         <p class="bank-deposit-descripton mb-0">
                                             Address
                                         </p>
                                         <input type="text" class="w-100 input-adress-crypto-dep">
                                     </div>
 
-                                    <div class="button-deposit-block col-12 mt-5">
+                                    <div class="button-deposit-block col-12  px-0 mt-3">
                                         <button class="bank-deposit-btn btn mb-3">
                                             WITHDRAW
                                         </button>
@@ -359,7 +361,7 @@
 
 <section class="mobile-deposit mt-5 py-5 d-md-none" id="mobileDepositBlock">
     <div class="container">
-        <h6 class="mobile-deposit-main">Bank Transaction</h6>
+        <h6 class="mobile-deposit-main">Withdraw <br> Bank Transaction</h6>
         <div class="mobole-withdraw-bank-choise d-flex flex-column flex-sm-row col-12 pl-0">
             <button class="dropdown-toggle mr-4 open-bank-choise" type="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Choose a method of withdrawal</button>
@@ -425,16 +427,16 @@
 
 <section class="mobile-crypto py-5 mt-5 d-md-none" id="mobileCryptoBlock">
     <div class="container">
-        <h6 class="mobile-deposit-main mb-5">Cryptocurrency</h6>
-        <div class="crypto-deposit-content mb-5 mt-5 position-relative">
+        <h6 class="mobile-deposit-main mb-5">Withdraw <br> Cryptocurrency</h6>
+        <div class="crypto-deposit-content my-3 position-relative">
             <input type="text" class="w-100">
             <select class="first-crypto-select-dep">
                 <option value="btc">OERO</option>
             </select>
         </div>
         <div class="crypto-deposit-content position-relative">
-            <input type="text" class="w-100">
-            <select class="first-crypto-select-dep">
+            <input type="text" class="w-100 my-3 ">
+            <select class="first-crypto-select-dep only-oero">
                 <option value="btc">BTC</option>
                 <option value="ETH">ETH</option>
                 <option value="ETC">ETC</option>
@@ -442,8 +444,8 @@
                 <option value="USDT">USDT</option>
             </select>
         </div>
-        <input type="text" class="w-100 input-adress-crypto-dep mt-5" placeholder="address">
-        <div class="button-deposit-block col-12 mt-5 pl-lg-0 text-center">
+        <input type="text" class="w-100 input-adress-crypto-dep my-3" placeholder="address">
+        <div class="button-deposit-block col-12 mt-3 pl-lg-0 text-center">
             <button class="bank-deposit-btn btn mb-3">
                 WITHDRAW
             </button>
@@ -469,8 +471,9 @@
                     <img src="img/logo-footer.png" alt="Oero" class="footer-img">
                 </a>
                 <div class="mt-2 first-footer-column">
-                    <a class="footer-link" href="#">Address:</a><br>
-                    <a class="footer-link" href="#">Registration number:</a><br>
+                    <a class="footer-link" href="#">OERO INTERNATIONAL OÜ</a><br>
+                    <a class="footer-link" href="#">Address: Tallinn, Lasnamäe linnaosa, Punane tn 6-219, 13619</a><br>
+                    <a class="footer-link" href="#">Registry code: 14696241</a><br>
                     <a class="footer-link" href="tel:+37045322322">+ 370 45 32 2322</a> <br>
                     <a class="footer-link" href="mailto:info@oero.io">info@oero.io</a>
                 </div>

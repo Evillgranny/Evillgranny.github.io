@@ -4,7 +4,19 @@ let personalAccountNavigation = document.querySelector('.personal-account-naviga
 let withdrawNavigation = document.querySelector(".choice-withdraw-navigation");
 let bankWithdrawChoise = document.querySelector('.withdraw-bank-choise');
 let mobileBankWithdrawChoise = document.querySelector('.mobile-withdraw-bank-choise');
+let menuBtn = document.querySelector('.navbar-toggler');
+let btnIcon = document.querySelector('.navbar-toggler-icon');
 
+$(menuBtn).click(function () {
+    console.log('меню открылось')
+    if ($(menuBtn).hasClass('collapsed')) {
+        console.log('1')
+        $(btnIcon).addClass('close-menu-icon')
+    } else {
+        console.log('2')
+        $(btnIcon).removeClass('close-menu-icon');
+    }
+})
 $('#modalGetLogin').change(function(){
     if($("#modalGetLogin:checked")) {
         $('#loginContent').show();

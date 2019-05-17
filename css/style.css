@@ -14,6 +14,14 @@ html {
 label {
     margin: 0;
 }
+.close-menu-icon {
+    background-image: url("../img/cancel.png") !important;
+    background-repeat: no-repeat;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    background-position: center center;
+
+}
 .btn:hover {
     background-color: #82149d !important;
     color: #ffffff;
@@ -274,6 +282,9 @@ table.table-fees td, table.table-fees th {
 }
 .use-cases-h3-main {
     font-weight: 400 !important;
+}
+.use-cases-img-top {
+    max-width: 400px;
 }
 .wp-style {
     font-size: 50px;
@@ -636,7 +647,8 @@ table.table-fees td, table.table-fees th {
 .bank-deposit-btn {
     font-size: 15px;
     text-transform: uppercase;
-    padding: 7px 85px 7px 85px;
+    width: 240px;
+    height: 45px;
     margin: 0 !important;
     background: rgb(9,152,194);
     border-radius: 5px;
@@ -818,8 +830,8 @@ table.table-fees td, table.table-fees th {
     display: inline-block;
     width: 19px;
     height: 19px;
-    margin-left: 10px;
     position: relative;
+    margin-right: 5px;
     top: 3px;
 }
 .history-euro::before {
@@ -852,7 +864,7 @@ table.table-fees td, table.table-fees th {
     display: inline-block;
     width: 19px;
     height: 19px;
-    margin-right: 10px;
+    margin-right: 5px;
     position: relative;
     top: 3px;
 }
@@ -1532,6 +1544,13 @@ span.support-drop-files-blue-text {
         padding-left: 0;
     }
     /*end personal account*/
+    .personal-account-navigation-lists{
+        padding-left: 15px !important;
+    }
+    select.only-oero {
+        top: 23px !important;
+    }
+
 }
 
 
@@ -1558,6 +1577,7 @@ span.support-drop-files-blue-text {
         height: 300px;
         margin: 0 auto;
     }
+
     .table-fees td, .table-fees th {
         font-size: 0.9rem;
     }
@@ -1565,6 +1585,7 @@ span.support-drop-files-blue-text {
         width: 80%;
         margin-top: -60px;
     }
+
     /*end use cases*/
     /*start team */
     .team-main {
@@ -1589,9 +1610,8 @@ span.support-drop-files-blue-text {
     }
     /*use-cases*/
     .use-cases-main {
-        font-size: 37px !important;
+        font-size: 30px !important;
         margin-top: 50px;
-
     }
     .use-img {
         width: 60%;
