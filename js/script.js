@@ -8,12 +8,9 @@ let menuBtn = document.querySelector('.navbar-toggler');
 let btnIcon = document.querySelector('.navbar-toggler-icon');
 
 $(menuBtn).click(function () {
-    console.log('меню открылось')
     if ($(menuBtn).hasClass('collapsed')) {
-        console.log('1')
         $(btnIcon).addClass('close-menu-icon')
     } else {
-        console.log('2')
         $(btnIcon).removeClass('close-menu-icon');
     }
 })
@@ -73,9 +70,7 @@ $(mobileBankWithdrawChoise).change(function () {
     if ($('#mobileInternationalBankTransferBtn').is(':checked')) {
         $('#mobileInternationalBankTransferBlock').show();
         $('#mobileSepaTransferBlock').hide();
-        console.log(1)
     } else if ($('#mobileSepaTransfer').is(':checked')) {
-        console.log(2);
         $('#mobileSepaTransferBlock').show();
         $('#mobileInternationalBankTransferBlock').hide();
     }
