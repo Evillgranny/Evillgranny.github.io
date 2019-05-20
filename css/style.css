@@ -63,10 +63,9 @@ label {
 }
 .main-header-f {
     font-size: 45px;
-    margin-bottom: 55px !important;
 }
 .main-title-f {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 0 !important;
 }
 .custom-pt {
@@ -158,10 +157,14 @@ label {
     padding-left: 0;
 }
 .min-cart-height {
-    min-height: 180px;
+    min-height: 227px;
 }
 .table-fees {
     width: 100%;
+}
+.fees-main {
+    font-size: 45px;
+    font-weight: 300;
 }
 .navbar .dropdown-menu {
     top: 50px;
@@ -252,16 +255,37 @@ table.table-fees td, table.table-fees th {
     list-style: none;
     margin-left: 45px;
 }
-
+.legal-accordions .card-body {
+    font-size: 20px;
+    font-weight: 300;
+}
+.wp-container h4 {
+    font-size: 30px;
+    font-weight: 300;
+}
+.step h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+.container-wp h4 {
+    font-size: 30px;
+    font-weight: 300;
+}
+.card-header h5 {
+    font-size: 30px;
+    font-weight: 300 !important;
+}
 .white-paper-lists a{
     color: #000000;
+    font-size: 20px;
 }
 .white-paper-lists-main:not(:first-child) {
     margin-top: 50px;
 }
 .white-paper-lists-main a{
     color: #000000;
-    font-weight: 400;
+    font-weight:300;
+    font-size: 25px;
 }
 .white-paper-lists-main a:hover,
 .white-paper-lists a:hover {
@@ -272,13 +296,28 @@ table.table-fees td, table.table-fees th {
     margin-right: 25px;
 }
 .white-paper-lists-article-main {
-    font-size: 41px;
+    font-size: 30px;
     text-transform: uppercase;
     margin-top: 160px;
     margin-bottom: 80px !important;
 }
 .use-cases-main {
-    font-weight: 400 !important;
+    font-size: 45px;
+    font-weight: 300 !important;
+}
+.use-cases-sub-main {
+    font-size: 30px;
+}
+.sub-main {
+    font-size: 30px !important;
+    font-weight: 300 !important;
+}
+.use-cases-text {
+    font-size: 20px !important;
+    font-weight: 300 !important;
+}
+.sub-text {
+    font-size: 20px;
 }
 .use-cases-h3-main {
     font-weight: 400 !important;
@@ -287,7 +326,7 @@ table.table-fees td, table.table-fees th {
     max-width: 400px;
 }
 .wp-style {
-    font-size: 50px;
+    font-size: 45px;
 }
 .wp-left-card {
     border: 1px solid rgb(180,180,180);
@@ -324,6 +363,12 @@ table.table-fees td, table.table-fees th {
 .transparent-info-number {
     font-size: 25px;
     font-weight: 400;
+}
+.transparent-main {
+    font-size: 45px;
+}
+.transparent-text{
+    font-size: 20px;
 }
 .transparent-info-text {
     color: rgb(41,128,167);
@@ -365,7 +410,7 @@ table.table-fees td, table.table-fees th {
 /*end transparent*/
 /*Team start*/
 .team-main {
-    font-size: 50px;
+    font-size: 45px;
 }
 .team-text-under-main {
     font-size: 20px;
@@ -984,11 +1029,11 @@ table.table-fees td, table.table-fees th {
 
 /*FAQ*/
 .faq-main {
-    font-size: 70px;
+    font-size: 45px;
     color: #FFFFFF;
 }
 .faq-main-text {
-    font-size: 25px;
+    font-size: 20px;
     color: #FFFFFF;
 }
 .start-using {
@@ -1011,33 +1056,31 @@ table.table-fees td, table.table-fees th {
 /*LEGAL*/
 .faq-h2 {
     font-style: normal;
-    font-weight: normal;
-    font-size: 41px;
+    font-weight: 300;
+    font-size: 30px;
     color: #000000;
 }
 .faq-text {
     font-style: normal;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
     color: #000000;
 }
 .h2-legal-main {
     font-style: normal;
-    font-weight: bold;
-    font-size: 70px;
+    font-weight: 300;
+    font-size: 45px;
     color: #FFFFFF;
 }
 .legal-main-description {
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 25px;
-    text-transform: capitalize;
     color: #FFFFFF;
 }
 .legal-main-after-description {
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 14px;
     text-transform: capitalize;
     color: #FFFFFF;
 }
@@ -1290,7 +1333,7 @@ span.support-drop-files-blue-text {
 /*end crypto deposit*/
 @media only screen and (max-width: 1200px) {
     .min-cart-height {
-        min-height: 232px;
+        min-height: 250px;
     }
     .main-header-f {
         font-size: 50px;
@@ -1437,9 +1480,6 @@ span.support-drop-files-blue-text {
     .wp-center-card {
         border: 1px solid rgb(180, 180, 180);
     }
-    .white-paper-lists-main a {
-        font-weight: 300;
-    }
     .oero-transparency-block {
         background: url(../img/whitePaper-mobile-bg.png) no-repeat;
         -webkit-background-size: cover;
@@ -1471,26 +1511,14 @@ span.support-drop-files-blue-text {
     .team-main {
         font-size: 25px;
     }
-    .team-text-under-main {
-        font-size: 12px;
-    }
-
     /*end team*/
     /*faq*/
-    .faq-main {
-        font-size: 37px;
-        color: #FFFFFF;
-    }
-    .faq-main-text {
-        font-size: 20px;
-    }
     .faq-main-img {
         width: 50%;
     }
     .start-using-text {
         font-weight: 300;
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 25px;
         text-align: center;
         text-transform: uppercase;
         color: #000000;
@@ -1511,20 +1539,8 @@ span.support-drop-files-blue-text {
     }
     /*end faq*/
     /*legal*/
-    .h2-legal-main {
-        font-size: 37px;
-    }
-    .legal-main-description {
-        font-size: 18px;
-    }
     .legal-main-after-description {
         font-size: 12px;
-    }
-    .card-header h5 {
-        font-size: 25px;
-    }
-    .legal-accordions .card-body {
-        font-size: 18px;
     }
     .privacy-policy-main {
         font-size: 22px;
@@ -1561,18 +1577,104 @@ span.support-drop-files-blue-text {
 
 @media only screen and (max-width: 768px) {
     .main-header-f {
-        font-size: 2rem;
+        font-size: 25px;
     }
     .main-title-f {
         font-size: 16px;
     }
-
+    .use-cases-main {
+        font-size: 25px;
+    }
+    .sub-main {
+        font-size: 20px !important;
+    }
+    .use-cases-sub-main {
+        font-size: 20px;
+    }
+    .sub-text {
+        font-size: 16px !important;
+    }
+    .use-cases-text {
+        font-size: 16px;
+    }
+    .transparent-main {
+        font-size: 25px;
+    }
+    .transparent-text {
+        font-size: 16px;
+    }
+    .wp-style {
+        font-size: 25px;
+    }
+    .h2-legal-main {
+        font-size: 25px;
+    }
+    .legal-main-description {
+        font-size: 16px;
+    }
+    .fees-main {
+        font-size: 25px;
+    }
+    .team-main {
+        font-size: 25px;
+    }
+    .team-text-under-main {
+        font-size: 16px;
+    }
+    .faq-main{
+        font-size: 25px;
+    }
+    .faq-main-text {
+        font-size: 16px;
+    }
+    .white-paper-lists-main a{
+        font-size: 20px;
+    }
+    .white-paper-lists a {
+        font-size: 16px;
+    }
+    .white-paper-lists-article-main {
+        font-size: 25px;
+    }
+    .step h3 {
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .container-wp h3 {
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .wp-container h4 {
+        font-size: 25px;
+    }
+    .container-wp h4 {
+        font-size: 25px;
+    }
+    .card-header h5 {
+        font-size: 25px;
+    }
+    .legal-accordions .card-body {
+        font-size: 16px;
+    }
+    .faq-h2 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        color: #000000;
+    }
+    .faq-text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        color: #000000;
+    }
 }
 @media only screen and (max-width: 767px) {
     .view {
         margin-top: 0;
     }
     /*use cases*/
+
     .use-img {
         height: 300px;
         margin: 0 auto;
@@ -1595,6 +1697,8 @@ span.support-drop-files-blue-text {
     .mobile-header {
         height: auto;
     }
+
+
 }
 @media only screen and (max-width: 544px) {
     .main-header-f {
@@ -1627,17 +1731,6 @@ span.support-drop-files-blue-text {
         font-size: 20px !important;
     }
     /*end use-cases*/
-    .team-main {
-        font-size: 25px;
-    }
-    /*white paper*/
-    h1.wp-style {
-        font-size: 37px;
-    }
-    .white-paper-lists-article-main {
-        font-size: 30px;
-    }
-    /*end white paper*/
     /*start transparent*/
     .transparent-text {
         font-size: 14px;
