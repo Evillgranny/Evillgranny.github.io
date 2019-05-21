@@ -46,9 +46,11 @@ $(bankWithdrawChoise).change(function () {
     if ($('#internationalBankTransferBtn').is(':checked')) {
         $('#internationalBankTransferBlock').show();
         $('#sepaTransferBlock').hide();
+        chooseWithdrawBtn.textContent = "International Bank transfer";
     } else if ($('#sepaTransfer').is(':checked')) {
         $('#sepaTransferBlock').show();
         $('#internationalBankTransferBlock').hide();
+        chooseWithdrawBtn.textContent = "SEPA transfer";
     }
 });
 
@@ -81,9 +83,11 @@ $(mobileBankWithdrawChoise).change(function () {
     if ($('#mobileInternationalBankTransferBtn').is(':checked')) {
         $('#mobileInternationalBankTransferBlock').show();
         $('#mobileSepaTransferBlock').hide();
+        bankMobileChoose.textContent = 'International Bank transfer'
     } else if ($('#mobileSepaTransfer').is(':checked')) {
         $('#mobileSepaTransferBlock').show();
         $('#mobileInternationalBankTransferBlock').hide();
+        bankMobileChoose.textContent = 'SEPA transfer'
     }
 });
 //Выбор в настройках
@@ -123,22 +127,6 @@ $('.mobile-setting-choise').change(function () {
 });
 
 
-//Выбор категории в саппорте
-window.onload = function () {
-    let ddItems = supportChooseBlock.querySelectorAll('.dropdown-item');
-    for (var i = 0; i < ddItems.length; i++) {
-        ddItems[i].onclick = function () {
-            chooseSupportBtn.textContent = this.textContent;
-        }
-    }
-
-    let mobileDDItems = mobileSupportChooseBlock.querySelectorAll('.dropdown-item');
-    for (var i = 0; i < mobileDDItems.length; i++) {
-        mobileDDItems[i].onclick = function () {
-            mobileChooseSupportBtn.textContent = this.textContent;
-        }
-    }
-}
 
 
 
