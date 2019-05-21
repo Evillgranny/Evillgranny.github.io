@@ -6,6 +6,8 @@ let bankWithdrawChoise = document.querySelector('.withdraw-bank-choise');
 let mobileBankWithdrawChoise = document.querySelector('.mobile-withdraw-bank-choise');
 let menuBtn = document.querySelector('.navbar-toggler');
 let btnIcon = document.querySelector('.navbar-toggler-icon');
+let choseMobileSettingCategoryBtn = document.querySelector('#chooseSettingBtn');
+let navMenu = document.querySelector('.navigation-menu');
 
 $(menuBtn).click(function () {
     if ($(menuBtn).hasClass('collapsed')) {
@@ -50,12 +52,20 @@ $(bankWithdrawChoise).change(function () {
     }
 });
 
+function closeMobileMenu() {
+    let navbarToggler = document.querySelector('.navbar-toggler');
+    btnIcon.classList.remove('close-menu-icon');
+    navMenu.classList.remove('show');
+    navbarToggler.classList.add('collapsed');
+    navbarToggler.setAttribute('aria-expanded', 'false');
+}
 // Mobile personal account
 //Показать банковский деп (моб)
 
 $('#mobileBankTransferBtn').click(function () {
     $('#mobileDepositBlock').show();
     $('#mobileCryptoBlock').hide();
+    closeMobileMenu();
 });
 
 //Показать крипто деп (моб)
@@ -63,6 +73,7 @@ $('#mobileBankTransferBtn').click(function () {
 $('#mobileBtnDepositCrypto').click(function () {
     $('#mobileCryptoBlock').show();
     $('#mobileDepositBlock').hide();
+    closeMobileMenu()
 });
 
 //выбор iban и sepa mobile
@@ -94,16 +105,40 @@ $('.setting-menu-lists').change(function () {
 //Выбор в мобильных настройках
 $('.mobile-setting-choise').change(function () {
     if ($('#mobileSettingBankAccount').is(':checked')) {
+        choseMobileSettingCategoryBtn.textContent = 'Bank Account'
         $('#mobileBankAccountBlock').show();
         $('#mobileChangePassword').hide();
         $('#mobileSettingSecurityBlock').hide();
     } else if ($('#mobileSettingChangePassword').is(':checked')) {
+        choseMobileSettingCategoryBtn.textContent = 'Change Password'
         $('#mobileBankAccountBlock').hide();
         $('#mobileChangePassword').show();
         $('#mobileSettingSecurityBlock').hide();
     } else if ($('#mobileSettingSecurity').is(':checked')) {
+        choseMobileSettingCategoryBtn.textContent = 'Security'
         $('#mobileBankAccountBlock').hide();
         $('#mobileChangePassword').hide();
         $('#mobileSettingSecurityBlock').show();
     }
 });
+
+
+//Выбор категории в саппорте
+window.onload = function () {
+    let ddItems = supportChooseBlock.querySelectorAll('.dropdown-item');
+    for (var i = 0; i < ddItems.length; i++) {
+        ddItems[i].onclick = function () {
+            chooseSupportBtn.textContent = this.textContent;
+        }
+    }
+
+    let mobileDDItems = mobileSupportChooseBlock.querySelectorAll('.dropdown-item');
+    for (var i = 0; i < mobileDDItems.length; i++) {
+        mobileDDItems[i].onclick = function () {
+            mobileChooseSupportBtn.textContent = this.textContent;
+        }
+    }
+}
+
+
+
