@@ -312,6 +312,7 @@ table.table-fees td, table.table-fees th {
 .sub-main {
     font-size: 30px !important;
     font-weight: 300 !important;
+    color: #ffffff;
 }
 .use-cases-text {
     font-size: 20px !important;
@@ -1337,10 +1338,29 @@ span.support-drop-files-blue-text {
     text-transform: uppercase;
     color: #EEAF0C;
 }
-.support-container .dropdown-menu {
-
-}
 /*end crypto deposit*/
+/*error*/
+.error-img {
+    max-width: 100%;
+}
+.error-btn {
+    background: #0295C0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 0;
+    height: 45px;
+    width: 240px;
+}
+.error-mini-img {
+    position: absolute !important;
+    top: 0;
+    z-index: 50;
+    left: 55% !important;
+    width: 30% !important;
+    margin-left: -15% !important;
+}
+/*end error*/
 @media only screen and (max-width: 1200px) {
     .min-cart-height {
         min-height: 250px;
@@ -1576,7 +1596,12 @@ span.support-drop-files-blue-text {
     select.only-oero {
         top: 23px !important;
     }
-
+    .error-img {
+        width: 60%;
+    }
+    .error-mini-img {
+        left: 53% !important;
+    }
 }
 
 
@@ -1597,6 +1622,7 @@ span.support-drop-files-blue-text {
     }
     .sub-main {
         font-size: 20px !important;
+
     }
     .use-cases-sub-main {
         font-size: 20px;
