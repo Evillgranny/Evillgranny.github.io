@@ -312,6 +312,8 @@ table.table-fees td, table.table-fees th {
 .sub-main {
     font-size: 30px !important;
     font-weight: 300 !important;
+}
+.color-white {
     color: #ffffff;
 }
 .use-cases-text {
