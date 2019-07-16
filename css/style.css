@@ -1397,6 +1397,53 @@ span.support-drop-files-blue-text {
     margin-left: -15% !important;
 }
 /*end error*/
+/*start blog*/
+
+.big-blog-content_img {
+    width: 100%;
+}
+.social-columns img {
+    width: 28px;
+    height: 28px;
+}
+.social-columns a {
+    display: block;
+    max-width: 28px !important;
+}
+.social-columns_link {
+    width: 28px;
+    height: 28px;
+    background: url(../img/Fb.svg) no-repeat center center / contain;
+}
+.social-columns_link2 {
+    width: 28px;
+    height: 28px;
+    background: url(../img/bit.svg) no-repeat center center / contain;
+}
+.social-columns_link3 {
+    width: 28px;
+    height: 28px;
+    background: url(../img/in.svg) no-repeat center center / contain;
+}
+.social-columns_link4 {
+    width: 28px;
+    height: 28px;
+    background: url(../img/telega.svg) no-repeat center center / contain;
+}
+.social-columns_link5 {
+    width: 28px;
+    height: 28px;
+    background: url(../img/twitter.svg) no-repeat center center / contain;
+}
+.social-columns_link6 {
+    width: 28px;
+    height: 28px;
+    background: url(../img/git.svg) no-repeat center center / contain;
+}
+.social-main {
+    white-space: nowrap;
+}
+/*end blog*/
 @media only screen and (max-width: 1200px) {
     .min-cart-height {
         min-height: 250px;

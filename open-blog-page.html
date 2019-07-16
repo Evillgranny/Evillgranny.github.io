@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>crypto deposit</title>
+    <title>OERO</title>
     <!-- Font Awesome -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
@@ -21,7 +21,7 @@
 <body>
 
 <!--Main Navigation-->
-<header class="mobile-header">
+<header>
 
     <nav class="navbar navbar-expand-lg navbar-dark custom-pt">
         <div class="container header-container">
@@ -34,11 +34,11 @@
 
             <div class="collapse navbar-collapse navigation-menu" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto menu-mobile-styles">
-                    <li class="nav-item mr-xs-0 mr-lg-5 d-none d-md-block">
+                    <li class="nav-item mr-xs-0 mr-lg-5">
                         <a class="nav-link navigation-link drop-header" href="use-cases.html">USE CASES <span class="sr-only">(current)</span></a>
                     </li>
-                    <div class="header-hr d-none d-md-block"></div>
-                    <li class="nav-item dropdown mr-xs-0 mr-lg-5 d-none d-md-block" id="dropdownOero">
+                    <div class="header-hr"></div>
+                    <li class="nav-item dropdown mr-xs-0 mr-lg-5 " id="dropdownOero">
                         <a class="nav-link dropdown-toggle navigation-link drop-header" id="navbarDropdownMenuOero" data-toggle="dropdown" aria-haspopup="true"
                            aria-expanded="false">OERO</a>
                         <div class="dropdown-menu dropdown-primary header-dropdown-items oreo-dropdown" aria-labelledby="navbarDropdownMenuOero">
@@ -50,16 +50,10 @@
                             <a class="dropdown-item" href="blog.html">BLOG</a>
                         </div>
                     </li>
-                    <div class="header-hr d-none d-md-block"></div>
+                    <div class="header-hr"></div>
                     <!-- Dropdown -->
-                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none text-center mt-4">
-                        <img src="img/icons/account-people.png" class="account-menu-img mb-2 mx-auto">
-                        <h2 class="account-menu-user-name mb-2">JANE DOE</h2>
-                        <h2 class="account-menu-user-balance mb-0">2560</h2>
-                        <p class="user-balance-text mb-0">Your balance OERO</p>
-                        <p class="user-balance-text-under">( 1  OERO  =  1 EUR )</p>
-                    </li>
-                    <li class="nav-item dropdown d-none d-md-block mr-xs-0 mr-lg-5">
+
+                    <li class="nav-item dropdown mr-xs-0 mr-lg-5">
                         <a class="nav-link dropdown-toggle navigation-link drop-header" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                            aria-expanded="false">ABOUT US</a>
                         <div class="dropdown-menu dropdown-primary header-dropdown-items" aria-labelledby="navbarDropdownMenuLink">
@@ -72,111 +66,105 @@
                             <a class="dropdown-item" href="FAQ.html">FAQ</a>
                         </div>
                     </li>
-                    <div class="header-hr d-none d-md-block"></div>
-                    <li class="nav-item dropdown mr-xs-0 d-none d-md-block">
-                        <a class="nav-link dropdown-toggle navigation-link drop-header"  data-toggle="dropdown" aria-haspopup="true"
-                           aria-expanded="false" id="userName">JANE DOE</a>
-                        <div class="dropdown-menu dropdown-primary header-dropdown-items last-dropdown" aria-labelledby="navbarDropdownMenuOero">
-                            <div class="before-triangle"></div>
-                            <div class="dropdown-triangle"></div>
-                            <a class="dropdown-item" href="#">PERSONAL <br> ACCOUNT</a>
-                            <a class="dropdown-item" href="#">SIGN OUT</a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
-                        <a class="nav-link navigation-link drop-header" href="personal-account.html">DEPOSIT<span class="sr-only">(current)</span></a>
-                    </li>
-                    <div class="header-hr d-md-none d-block"></div>
-                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
-                        <a class="nav-link navigation-link drop-header" href="withdraw.html">WITHDRAW<span class="sr-only">(current)</span></a>
-                    </li>
-                    <div class="header-hr d-md-none d-block"></div>
-                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
-                        <a class="nav-link navigation-link drop-header" href="history.html">HISTORY<span class="sr-only">(current)</span></a>
-                    </li>
-                    <div class="header-hr d-md-none d-block"></div>
-                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
-                        <a class="nav-link navigation-link drop-header" href="setting.html">SETTING<span class="sr-only">(current)</span></a>
-                    </li>
-                    <div class="header-hr d-md-none d-block"></div>
-                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none">
-                        <a class="nav-link navigation-link drop-header" href="support.html">SUPPORT<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item mr-xs-0 mr-lg-5 d-md-none text-center">
-                        <button type="button" class="btn m-nav-button mb-3 sign-out-btn">SIGN OUT</button>
-                    </li>
+                    <button type="button" class="btn m-nav-button main-menu-btn" data-toggle="modal" data-target="#modalLoginForm">authorization</button>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <div class="view full-page-intro" style="background: url('img/main-background.png')no-repeat center center; background-size: cover;">
 
-    <div class="view full-page-intro d-none d-md-block" style="background: url('img/main-background.png')no-repeat center center; background-size: cover;">
+        <!-- Mask & flexbox options-->
         <div class="mask d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
             <div class="container">
-                <div class="row wow fadeIn mt-5" style="visibility: visible; animation-name: fadeIn;">
-                    <div class="cabinet-content col-12 px-0 d-flex">
-                        <div class="left-account-menu col-2 pt-3 px-0 mt-2">
-                            <ul class="d-flex justify-content-between flex-column text-center h-100">
-                                <li class="left-account-menu-list">
-                                    <img src="img/icons/account-people.png" class="account-menu-img mb-2 mx-auto">
-                                    <h2 class="account-menu-user-name mb-3">JANE DOE</h2>
-                                </li>
-                                <li class="left-account-menu-list">
-                                    <h2 class="account-menu-user-balance mb-0">2560</h2>
-                                    <p class="user-balance-text mb-0">Your balance OERO</p>
-                                    <p class="user-balance-text-under">( 1  OERO  =  1 EUR )</p>
-                                </li>
-                                <li class="left-account-menu-list mt-3">
-                                    <ul class="money-way-menu">
-                                        <li class="money-way-menu-list"><label><img src="img/icons/1.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none"><a href="personal-account.html" class="money-way-menu-list-link text-left">DEPOSIT</a></label></li>
-                                        <li class="money-way-menu-list"><label><img src="img/icons/2.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none" id="withdraw"><a href="withdraw.html" class="money-way-menu-list-link">WITHDRAW</a></label></li>
-                                        <li class="money-way-menu-list"><label><img src="img/icons/3.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none"><a href="history.html" class="money-way-menu-list-link">HISTORY</a></label></li>
-                                        <li class="money-way-menu-list"><label><img src="img/icons/4.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none"><a href="setting.html" class="money-way-menu-list-link">SETTINGS</a></label></li>
-                                    </ul>
-                                </li>
-                                <li class="left-account-menu-list">
-                                <li class="money-way-menu-list"><label><img src="img/icons/5.png" alt="" class="d-none d-lg-block"><input type="radio" name="left-menu-radio" class="d-none"><a href="support.html" class="money-way-menu-list-link">SUPPORT</a></label></li>
-                                </li>
-                            </ul>
-                        </div>
 
-                        <div class="right-account-menu col-10 mt-2 pl-lg-0 pb-3 d-flex">
-                            <div class="crypto-dep-content ml-lg-5 mt-3 w-100">
-                                <p class="crypto-dep-text mb-1">Amount to transfer</p>
-                                <p class="crypto-dep-summ">1.595100 BTC</p>
-                                <img src="img/qr-code.png" alt="">
-                                <label class="d-flex flex-column mt-5">
-                                    <span class="crypto-dep-description mb-0">Address</span>
-                                    <input type="text" class="crypto-dep-input mt-0 col-10 col-lg-6 mb-3" value="yrevuybvyrtbuvbyrhuvnruvmer8255vjnej555" readonly>
-                                </label>
+                <!--Grid row-->
+                <div class="row wow fadeIn mt-5 d-flex align-items-center flex-lg-row flex-column" style="visibility: visible; animation-name: fadeIn;">
 
-                                <button class="btn btn-crypto-dep ml-0 mt-3">TO PAY</button>
-                            </div>
-                        </div>
+                    <!--Grid column-->
+                    <div class="col-lg-5 mb-4 white-text text-center text-lg-left">
+
+                        <h1 class="main-header-f mb-5 mt-5">OEROBLOG</h1>
+
                     </div>
+
+                    <div class="col-lg-7 mt-md-5 mb-4">
+
+                        <img src="img/blog-main.png" class="img-fluid mx-auto" alt="">
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+
                 </div>
+                <!--Grid row-->
+
             </div>
+            <!-- Content -->
+
         </div>
+        <!-- Mask & flexbox options-->
+
     </div>
+
 </header>
+<!--Main Navigation-->
 
-<section class="crypto-dep-content-mobile mt-5 py-5 d-md-none container">
-    <p class="crypto-dep-text mb-1">Amount to transfer</p>
-    <p class="crypto-dep-summ">1.595100 BTC</p>
-    <img src="img/qr-code.png" alt="">
-    <label class="d-flex flex-column mt-5">
-        <span class="crypto-dep-description mb-0">Address</span>
-        <input type="text" class="crypto-dep-input mt-0 col-12" value="yrevuybvyrtbuvbyrhuvnruvmer8255vjnej555" readonly>
-    </label>
 
-    <div class="button-container text-center">
-        <button class="btn btn-crypto-dep ml-0 mt-5 mx-auto">TO PAY</button>
-    </div>
-
-</section>
-
+<!--Main Layout-->
+<main class="text-center py-5 mt-3">
+    <section class="open-block">
+        <div class="container">
+            <h1 class="open-block_main sub-main mb-5">USDC Ecosystem Spotlight: USDC broadens DeFi footprint as value transferred on-chain surpasses $10B</h1>
+            <p class="open-block_date text-left col-12">11.07.2019</p>\
+            <img src="img/blog.png" alt="" class="open-block_img mt-4 col-lg-8 mr-auto d-block">
+            <p class="open-block_text mt-5 text-left col-12">
+                SD Coin (USDC) has seen significant traction in the last few weeks,
+                with leading projects in the Decentralized Finance (DeFi) sector announcing support,
+                just as the US Dollar-backed stablecoin surpassed $10 billion in on-chain transfers.
+                With Compound, Dharma, dYdX, Liquidity Network and Coinbase Commerce announcing the
+                integration of USDC into their platforms, CENTRE makes solid progress towards its mission
+                of establishing open standards for fiat tokens on the internet.
+            </p>
+            <p class="open-block_text mt-3 text-left col-12">
+                Compound recently launched v2 of their open-source protocol for algorithmic,
+                efficient money markets on the Ethereum blockchain, which now supports USDC.
+                Compound users can either lend USDC and earn interest, or borrow USDC using
+                other Ethereum assets as collateral — with instant liquidity (deposit and
+                withdraw whenever you want), no counterparties or peers.
+            </p>
+            <p class="open-block_text mt-3 text-left col-12">
+                Dharma, a peer to peer lending platform built on Ethereum, recently added support for USDC.
+                Now, Dharma users can borrow and lend USDC at attractive rates from anywhere in the world,
+                instantly. Dharma has built a beautiful user experience and it doesn’t get much easier to
+                borrow or lend USDC. For borrowing USDC, select the amount you want to borrow, send your
+                collateral to the Dharma smart contracts, and your principal should arrive in minutes.
+                If you’re looking to lend USDC, specify an amount you want to lend, send your funds,
+                and start earning interest.
+            </p>
+            <p class="open-block_text mt-3 text-left col-12">
+                dYdX is a powerful decentralized exchange for margin trading, borrowing and lending.
+                Since going live in May, the platform has done ~$25M in trade volume, and originated
+                ~$15M in borrow volume. dYdX users can now lend or borrow USDC instantly, with no wait
+                time for matching counterparties or minimum lock up periods. Lenders can deposit USDC
+                to earn a market determined interest rate that compounds continuously. The capital can
+                also be withdrawn anytime. Borrowers can borrow USDC, so long as it is sufficiently
+                collateralized by ETH or DAI. dYdX will also soon be supporting USDC denominated pairs
+                for margin trading natively in the platform. This will allow users to borrow and trade USDC
+                to leverage long ETH, use USDC to collateralize short ETH positions or trade between USDC and DAI.
+                The Liquidity Network recently integrated USDC into their platform. With the Liquidity mobile
+                wallet, you can transfer USDC for free — no blockchain fees, no gas. Simply convert USDC
+                to fUSDC (free and fast off-chain USDC), and send fUSDC on the Liquidity commit-chain near-instantly.
+            </p>
+        </div>
+    </section>
+</main>
+<!--Main Layout-->
 
 <!-- Footer -->
 <footer class="page-footer text-dark font-small pt-5">
@@ -308,7 +296,90 @@
 
 </footer>
 <!-- Footer -->
+<!--  MODAL-->
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
 
+            <div class="navigation-modal-menu w-100 ml-auto mr-auto pl-2 mt-4">
+                <div class="modal-header modal-header-my mx-2">
+                    <label class="modal-login"><input type="radio" name="modal-radio" id="modalGetLogin" class="modal-login-check d-none" checked><p class="modal-login-text">Login</p></label>
+                </div>
+                <div class="modal-header modal-header-my">
+                    <label class="modal-signin"><input type="radio" id="modalGetSign" name="modal-radio" class="d-none modal-signin-check"><p class="modal-sign-text">Sing up</p></label>
+                </div>
+            </div>
+
+            <div class="login-container" id="loginContent">
+                <div class="modal-body mx-sm-3">
+                    <div class="mb-4 text-center">
+                        <input type="email" class="w-100 modal-email" placeholder="Email">
+                    </div>
+
+                    <div class="mb-3 text-center">
+                        <input type="password" id="defaultForm-pass" class="w-100 modal-pass" placeholder="Password">
+                    </div>
+
+                    <div class="forgot-pass-block mb-4">
+                        <a href="" class="forgot-pass-text">Forgot your password?</a>
+                    </div>
+
+                    <div class="captcha-modal-block">
+                        <div class="w-100 captcha">
+                            <img src="img/captcha.png" alt="" class="catcha-img">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-center w-sm-75 ml-auto mr-auto modal-body mx-sm-3">
+                    <button class="btn w-100 modal-btn mb-5 mx-1">Login</button>
+                </div>
+            </div>
+
+            <div class="sign-in-container" id="signInContent">
+                <div class="modal-body mx-sm-3">
+                    <div class="mb-4 text-center">
+                        <input type="email" class="w-100 modal-email" placeholder="Email">
+                    </div>
+
+                    <div class="mb-4 text-center">
+                        <input type="password" class="w-100 modal-pass" placeholder="Password">
+                    </div>
+
+                    <div class="mb-4 text-center">
+                        <input type="password" class="w-100 modal-pass" placeholder="Confirm Password">
+                    </div>
+
+                    <div class="forgot-pass-block  mb-1">
+                        <div class="custom-control rules-check-block custom-checkbox">
+                            <input type="checkbox" class="w-100 custom-control-input" id="defaultChecked2" checked>
+                            <label class="custom-control-label" for="defaultChecked2"><p class="rules-text mb-4">I AGREE TO <a href="#">TERMS OF SERVICE, PRIVACY  POLICY</a>
+                                AND <a href="fees.html">FEES</a></p></label>
+                        </div>
+                    </div>
+
+                    <div class="captcha-modal-block">
+                        <div class="w-100 captcha">
+                            <img src="img/captcha.png" alt="" class="catcha-img w-50">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-center ml-auto mr-auto modal-body mx-3">
+                    <button class="btn w-100 modal-btn mb-5 mx-3">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+<!--End Modal  -->
 
 <!-- SCRIPTS -->
 <!-- JQuery -->
